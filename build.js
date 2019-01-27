@@ -23,14 +23,14 @@ function addChapterToBook(html, url, cache_path){
   let $ = cheerio.load(html);
   let title = $(config.titleSelector).first().text();
   // first clean up loaded html
-  if(config.withoutSelector) $(config.withoutSelector).remove();
+  if(config.withoutSelector) {$(config.withoutSelector).remove();}
   // then get the content
   let content = $(config.contentSelector).html();
   let path = url;
   if(typeof url === 'object'){
     path = url.url;
-    if(url.titleSelector) title = $(url.titleSelector).text();
-    if(url.contentSelector) content = $(url.contentSelector).text();
+    if(url.titleSelector) {title = $(url.titleSelector).text();}
+    if(url.contentSelector) {content = $(url.contentSelector).text();}
   }
   if(title === ''){
     console.log('Couldn\'t correctly scrape', path);
@@ -45,13 +45,14 @@ function addChapterToBook(html, url, cache_path){
 }
 
 config.urls.forEach(url => {
+  let path
   if(typeof url === 'string'){
     path = url;
   } else {
     path = url.url;
   }
   let stem = path.trim().split('/').pop();
-  cache_path = './cache/' + stem + (stem.split('.').pop() !== 'html' ? '.html' : '');
+  const cache_path = './cache/' + stem + (stem.split('.').pop() !== 'html' ? '.html' : '');
   if(!jetpack.exists(cache_path)){
     console.log('Scraping', config.metadata.source + path);
     execSync('wget ' + config.metadata.source + path + ' -nc -q -O ' + cache_path);
