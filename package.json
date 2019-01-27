@@ -8,6 +8,7 @@
     "lint:fix": "eslint . --fix --ext .js,.jsx",
     "lint": "eslint . --ext .js,.jsx",
     "format": "prettier --config .prettierrc --write '*.js'",
+    "format:html": "prettier --config cache/.prettierrc --write 'cache/А*.html'",
     "start": "nodejs build.js",
     "build": "nodejs build.js && nodejs build.js codex && nodejs build.js inadequate"
   },
