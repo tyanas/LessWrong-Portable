@@ -22,8 +22,10 @@ var base_content = jetpack.read('template.xhtml');
 function addChapterToBook(html, url, cache_path){
   let $ = cheerio.load(html);
   let title = $(config.titleSelector).first().text();
-  let content = $(config.contentSelector).html();
+  // first clean up loaded html
   if(config.withoutSelector) $(config.withoutSelector).remove();
+  // then get the content
+  let content = $(config.contentSelector).html();
   let path = url;
   if(typeof url === 'object'){
     path = url.url;
