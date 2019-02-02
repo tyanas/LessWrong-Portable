@@ -1,6 +1,6 @@
 #!/usr/bin/env nodejs
 
-const cheerio = require('cheerio');
+const parser = require('node-html-parser');
 const makepub = require('nodepub');
 const jetpack = require('fs-jetpack');
 const { execSync } = require('child_process');
@@ -40,9 +40,9 @@ epub.addSection('Title Page', '<h1>[[TITLE]]</h1><h3>by [[AUTHOR]]</h3>', true, 
 var base_content = jetpack.read('template.xhtml');
 
 function addChapterToBook(html, urlConfig, cache_path) {
-  let $ = cheerio.load(html);
+  const document = parser.parse(html);
   let path = urlConfig;
-  let { titleSelector, contentSelector, withoutSelector } = config;
+  let { titleSelector, contentSelector } = config;
 
   if (typeof urlConfig === 'object') {
     path = urlConfig.url;
@@ -50,17 +50,13 @@ function addChapterToBook(html, urlConfig, cache_path) {
       const selectors = config.selectorSets[urlConfig.selectorSet];
       titleSelector = selectors.titleSelector || titleSelector;
       contentSelector = selectors.contentSelector || contentSelector;
-      withoutSelector = selectors.withoutSelector || withoutSelector;
     } else {
       titleSelector = urlConfig.titleSelector || titleSelector;
       contentSelector = urlConfig.contentSelector || contentSelector;
-      withoutSelector = urlConfig.withoutSelector || withoutSelector;
     }
   }
 
-  let title = $(titleSelector)
-    .first()
-    .text();
+  let title = document.querySelector(titleSelector).text;
   if (title === '') {
     console.log(`Couldn't find the title on the page ${titleSelector} ${path}`);
     jetpack.remove(cache_path);
@@ -68,12 +64,11 @@ function addChapterToBook(html, urlConfig, cache_path) {
     return;
   }
 
-  // first clean up loaded html
-  if (withoutSelector) {
-    $(withoutSelector).remove();
-  }
   // then get the content
-  let content = $(contentSelector).html();
+  let content = document
+    .querySelector(contentSelector)
+    .toString()
+    .replace('');
 
   if (!content) {
     console.log(`\nCouldn't find the content on the page ${path}\n`);
@@ -83,17 +78,21 @@ function addChapterToBook(html, urlConfig, cache_path) {
   }
 
   let safe_title = title.toLowerCase().replace(/ /g, '-');
-  let newDoc = cheerio.load(base_content);
-  newDoc('body').append('<div id="' + safe_title + '"></div>');
-
   let prettyTitle = title;
   if (typeof urlConfig === 'object' && urlConfig.num) {
     prettyTitle = `${urlConfig.num}. ${title}`;
   }
-  newDoc('div')
-    .append('<h1>' + prettyTitle + '</h1>')
-    .append(content.replace('<br />', '</p><p>'));
-  epub.addSection(prettyTitle, newDoc('body').html());
+  let newDoc = parser.parse(base_content);
+  newDoc
+    .querySelector('body')
+    .set_content(`<div id="${safe_title}" class="chapter"><h1>${prettyTitle}</h1></div>`);
+  newDoc.querySelector('div').appendChild(content);
+
+  const section = newDoc
+    .querySelector('body')
+    .toString()
+    .replace(/>&</g, '>&amp;<');
+  epub.addSection(prettyTitle, section);
 }
 
 config.urls.forEach(url => {
@@ -133,5 +132,10 @@ if (scrapeError) {
 } else {
   epub.writeEPUB(console.error, 'output', config.shorttitle, () => {
     console.log('Book successfully written to output/' + config.shorttitle + '.epub');
+  });
+
+  // Also write the structure both for debugging purposes and also to provide sample output in GitHub.
+  epub.writeFilesForEPUB('./example-EPUB-files', function() {
+    console.log('Done!');
   });
 }

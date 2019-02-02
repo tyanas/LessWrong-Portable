@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/AABoyles/LessWrong-Portable#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
     "eslint": "^5.12.1",
     "fs-jetpack": "^1.2.0",
+    "node-html-parser": "^1.1.12",
     "nodepub": "^2.0.7"
   }
 }
