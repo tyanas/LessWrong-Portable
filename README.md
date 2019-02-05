@@ -4,7 +4,7 @@ Download the current versions of:
 
 | Title | Author | EPUB | MOBI |
 | ----- | ------ | ---- | ---- |
-| [AI to Zombie](https://lesswrong.ru/node/285) partialy (62%) translated to Russian | Eliezer Yudkowsky | [:book:](https://github.com/tyanas/LessWrong-Portable/raw/master/output/%20ai2zombie-ru-62.epub) | [:book:](https://github.com/tyanas/LessWrong-Portable/raw/master/output/%20ai2zombie-ru-62.mobi) [FB2](https://github.com/tyanas/LessWrong-Portable/raw/master/output/%20ai2zombie-ru-62.fb2) |
+| [AI to Zombie](https://lesswrong.ru/node/285) partialy (62%) translated to Russian | Eliezer Yudkowsky | [:book:](https://github.com/tyanas/LessWrong-Portable/raw/master/output/ai2zombie-ru-62.epub) | [:book:](https://github.com/tyanas/LessWrong-Portable/raw/master/output/ai2zombie-ru-62.mobi) [FB2](https://github.com/tyanas/LessWrong-Portable/raw/master/output/ai2zombie-ru-62.fb2) |
 | [The Codex](https://www.lesserwrong.com/codex) | Scott Alexander | [:book:](https://github.com/AABoyles/LessWrong-Portable/raw/master/output/TheCodex.epub) | [:book:](https://github.com/AABoyles/LessWrong-Portable/raw/master/output/TheCodex.mobi) |
 | [Rationality Abridged](https://perpetualcanon.blogspot.nl/p/rationality.html) | Quaerendo | [:book:](https://github.com/AABoyles/LessWrong-Portable/raw/master/output/RationalityAbridged.epub) | [:book:](https://github.com/AABoyles/LessWrong-Portable/raw/master/output/RationalityAbridged.mobi) |
 | [The Abridged Guide to Intelligent Characters](http://yudkowsky.tumblr.com/writing) | Eliezer Yudkowsky | [:book:](https://github.com/AABoyles/LessWrong-Portable/raw/master/output/IntelligentCharacters.epub) | [:book:](https://github.com/AABoyles/LessWrong-Portable/raw/master/output/IntelligentCharacters.mobi) |
