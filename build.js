@@ -114,7 +114,7 @@ function addChapterToBook(html, urlConfig, cache_path) {
     .set_content(`<div id="${safe_title}" class="chapter"><h1>${prettyTitle}</h1>${content}</div>`);
 
   let section = newDoc
-    .querySelector('body')
+    .querySelector('div.chapter')
     .toString()
     .replace(/>&</g, '>&amp;<')
     .replace(/nisbett&wilson.pdf/g, 'nisbett&amp;wilson.pdf')
@@ -126,7 +126,6 @@ function addChapterToBook(html, urlConfig, cache_path) {
     .replace(/<a href="\/node\//g, '<a href="https://lesswrong.ru/node/')
     .replace(/ & /g, ' &amp; ')
     ;
-
 
   // set relative links
 
