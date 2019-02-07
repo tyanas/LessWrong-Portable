@@ -1,0 +1,2580 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script id="serverTimezoneOffset" type="application/ejson">
+            {"offset":0}
+        </script>
+
+        <title data-react-helmet="true">About: LessWrong - LessWrong 2.0</title>
+        <meta data-react-helmet="true" property="og:image" content="https://res.cloudinary.com/lesswrong-2-0/image/upload/v1503704344/sequencesgrid/h6vrwdypijqgsop7xwa0.jpg" />
+        <meta data-react-helmet="true" name="twitter:image:src" content="https://res.cloudinary.com/lesswrong-2-0/image/upload/v1503704344/sequencesgrid/h6vrwdypijqgsop7xwa0.jpg" />
+        <meta data-react-helmet="true" http-equiv="Accept-CH" content="DPR, Viewport-Width, Width" />
+        <meta data-react-helmet="true" charset="utf-8" />
+        <meta
+            data-react-helmet="true"
+            name="description"
+            content="LessWrong is a community blog devoted to the art of human rationality.
+
+In 2009, Eliezer Yudkowsky founded the site and went on to write several years&#x27;
+worth of daily blogposts about rationality. They&#x27;ve been edited and collected
+into _**... (Read More)"
+        />
+        <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta data-react-helmet="true" property="og:type" content="article" />
+        <meta data-react-helmet="true" property="og:url" content="https://www.lesswrong.com/posts/ANDbEKqbdDuBCQAnM/about-lesswrong" />
+        <meta data-react-helmet="true" property="og:title" content="About: LessWrong - LessWrong 2.0" />
+        <meta
+            data-react-helmet="true"
+            property="og:description"
+            content="LessWrong is a community blog devoted to the art of human rationality.
+
+In 2009, Eliezer Yudkowsky founded the site and went on to write several years&#x27;
+worth of daily blogposts about rationality. They&#x27;ve been edited and collected
+into _**... (Read More)"
+        />
+        <meta data-react-helmet="true" name="twitter:card" content="summary" />
+        <meta data-react-helmet="true" name="twitter:title" content="About: LessWrong - LessWrong 2.0" />
+        <meta
+            data-react-helmet="true"
+            name="twitter:description"
+            content="LessWrong is a community blog devoted to the art of human rationality.
+
+In 2009, Eliezer Yudkowsky founded the site and went on to write several years&#x27;
+worth of daily blogposts about rationality. They&#x27;ve been edited and collected
+into _**... (Read More)"
+        />
+        <link data-react-helmet="true" name="material-icons" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link data-react-helmet="true" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.0.0/themes/reset-min.css" />
+        <link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+        <link data-react-helmet="true" rel="stylesheet" href="https://use.typekit.net/jvr1gjm.css" />
+        <link data-react-helmet="true" rel="canonical" href="https://www.lesswrong.com/posts/ANDbEKqbdDuBCQAnM/about-lesswrong" />
+        <link data-react-helmet="true" name="favicon" rel="shortcut icon" href="https://res.cloudinary.com/lesswrong-2-0/image/upload/v1497915096/favicon_lncumn.ico" />
+        <link data-react-helmet="true" name="rss" rel="alternate" type="application/rss+xml" href="https://www.lesswrong.com/feed.xml" />
+        <style id="jss-server-side">
+            .MuiTooltip-popper {
+                z-index: 1500;
+                opacity: 0.9;
+            }
+            .MuiTooltip-tooltip {
+                color: #fff;
+                padding: 4px 8px;
+                font-size: 1rem;
+                max-width: 300px;
+                font-family: Calibri, "Gill Sans", "Gill Sans MT", Myriad Pro, Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial,
+                    sans-serif;
+                line-height: 1.4em;
+                border-radius: 4px;
+                background-color: #616161;
+            }
+            .MuiTooltip-touch {
+                padding: 8px 16px;
+                font-size: 0.875rem;
+                line-height: 1.14286em;
+            }
+            .MuiTooltip-tooltipPlacementLeft {
+                margin: 0 24px;
+                transform-origin: right center;
+            }
+            @media (min-width: 600px) {
+                .MuiTooltip-tooltipPlacementLeft {
+                    margin: 0 14px;
+                }
+            }
+            .MuiTooltip-tooltipPlacementRight {
+                margin: 0 24px;
+                transform-origin: left center;
+            }
+            @media (min-width: 600px) {
+                .MuiTooltip-tooltipPlacementRight {
+                    margin: 0 14px;
+                }
+            }
+            .MuiTooltip-tooltipPlacementTop {
+                margin: 24px 0;
+                transform-origin: center bottom;
+            }
+            @media (min-width: 600px) {
+                .MuiTooltip-tooltipPlacementTop {
+                    margin: 14px 0;
+                }
+            }
+            .MuiTooltip-tooltipPlacementBottom {
+                margin: 24px 0;
+                transform-origin: center top;
+            }
+            @media (min-width: 600px) {
+                .MuiTooltip-tooltipPlacementBottom {
+                    margin: 14px 0;
+                }
+            }
+            .MuiTypography-root {
+                margin: 0;
+                display: block;
+            }
+            .MuiTypography-display4 {
+                color: #424242;
+                font-size: 7rem;
+                font-weight: 300;
+                font-family: Calibri, "Gill Sans", "Gill Sans MT", Myriad Pro, Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial,
+                    sans-serif;
+                line-height: 1.14286em;
+                margin-left: -0.04em;
+                letter-spacing: -0.04em;
+            }
+            .MuiTypography-display3 {
+                color: #424242;
+                font-size: 3rem;
+                margin-top: 1.2em;
+                font-weight: 400;
+                font-family: Calibri, "Gill Sans", "Gill Sans MT", Myriad Pro, Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial,
+                    sans-serif;
+                line-height: 1.30357em;
+                margin-left: -0.02em;
+                letter-spacing: -0.02em;
+            }
+            .MuiTypography-display2 {
+                color: #424242;
+                font-size: 2.8rem;
+                margin-top: 1em;
+                font-weight: 400;
+                font-family: Calibri, "Gill Sans", "Gill Sans MT", Myriad Pro, Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial,
+                    sans-serif;
+                line-height: 1.13333em;
+                margin-left: -0.02em;
+            }
+            .MuiTypography-display1 {
+                color: #424242;
+                font-size: 2rem;
+                margin-top: 1em;
+                font-weight: 400;
+                font-family: Calibri, "Gill Sans", "Gill Sans MT", Myriad Pro, Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial,
+                    sans-serif;
+                line-height: 1.20588em;
+            }
+            .MuiTypography-headline {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 1.5rem;
+                font-weight: 400;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                line-height: 1.35417em;
+            }
+            .MuiTypography-title {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 18px;
+                font-weight: 500;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                line-height: 1.16667em;
+                margin-bottom: 3px;
+            }
+            .MuiTypography-subheading {
+                color: #757575;
+                font-size: 15px;
+                font-weight: 400;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                line-height: 1.5em;
+            }
+            .MuiTypography-body2 {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 1.16rem;
+                font-weight: 400;
+                font-family: Calibri, "Gill Sans", "Gill Sans MT", Myriad Pro, Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial,
+                    sans-serif;
+                line-height: 1.5rem;
+                link-underline-position: 72%;
+            }
+            .MuiTypography-body1 {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 1.4rem;
+                font-weight: 400;
+                font-family: Calibri, "Gill Sans", "Gill Sans MT", Myriad Pro, Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial,
+                    sans-serif;
+                line-height: 2rem;
+            }
+            .MuiTypography-caption {
+                color: rgba(0, 0, 0, 0.54);
+                font-size: 0.9rem;
+                font-weight: 400;
+                font-family: Calibri, "Gill Sans", "Gill Sans MT", Myriad Pro, Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial,
+                    sans-serif;
+                line-height: 1.375em;
+            }
+            .MuiTypography-button {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 0.875rem;
+                font-weight: 500;
+                font-family: Calibri, "Gill Sans", "Gill Sans MT", Myriad Pro, Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial,
+                    sans-serif;
+                text-transform: uppercase;
+            }
+            .MuiTypography-srOnly {
+                width: 1px;
+                height: 1px;
+                position: absolute;
+                overflow: hidden;
+            }
+            .MuiTypography-alignLeft {
+                text-align: left;
+            }
+            .MuiTypography-alignCenter {
+                text-align: center;
+            }
+            .MuiTypography-alignRight {
+                text-align: right;
+            }
+            .MuiTypography-alignJustify {
+                text-align: justify;
+            }
+            .MuiTypography-noWrap {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .MuiTypography-gutterBottom {
+                margin-bottom: 0.35em;
+            }
+            .MuiTypography-paragraph {
+                margin-bottom: 16px;
+            }
+            .MuiTypography-colorInherit {
+                color: inherit;
+            }
+            .MuiTypography-colorPrimary {
+                color: #5f9b65;
+            }
+            .MuiTypography-colorSecondary {
+                color: #5f9b65;
+            }
+            .MuiTypography-colorTextPrimary {
+                color: rgba(0, 0, 0, 0.87);
+            }
+            .MuiTypography-colorTextSecondary {
+                color: rgba(0, 0, 0, 0.54);
+            }
+            .MuiTypography-colorError {
+                color: #bf360c;
+            }
+            .MuiTouchRipple-root {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+                z-index: 0;
+                position: absolute;
+                overflow: hidden;
+                border-radius: inherit;
+                pointer-events: none;
+            }
+            .MuiTouchRipple-ripple {
+                top: 0;
+                left: 0;
+                width: 50px;
+                height: 50px;
+                opacity: 0;
+                position: absolute;
+            }
+            .MuiTouchRipple-rippleVisible {
+                opacity: 0.3;
+                transform: scale(1);
+                animation: mui-ripple-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .MuiTouchRipple-ripplePulsate {
+                animation-duration: 200ms;
+            }
+            .MuiTouchRipple-child {
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                display: block;
+                border-radius: 50%;
+                background-color: currentColor;
+            }
+            .MuiTouchRipple-childLeaving {
+                opacity: 0;
+                animation: mui-ripple-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .MuiTouchRipple-childPulsate {
+                top: 0;
+                left: 0;
+                position: absolute;
+                animation: mui-ripple-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+            }
+            @keyframes mui-ripple-enter {
+                0% {
+                    opacity: 0.1;
+                    transform: scale(0);
+                }
+                100% {
+                    opacity: 0.3;
+                    transform: scale(1);
+                }
+            }
+            @keyframes mui-ripple-exit {
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+            @keyframes mui-ripple-pulsate {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(0.92);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+            .MuiButtonBase-root {
+                color: inherit;
+                cursor: pointer;
+                margin: 0;
+                border: 0;
+                display: inline-flex;
+                padding: 0;
+                outline: none;
+                position: relative;
+                user-select: none;
+                align-items: center;
+                border-radius: 0;
+                vertical-align: middle;
+                justify-content: center;
+                -moz-appearance: none;
+                text-decoration: none;
+                background-color: transparent;
+                -webkit-appearance: none;
+                -webkit-tap-highlight-color: transparent;
+            }
+            .MuiButtonBase-root::-moz-focus-inner {
+                border-style: none;
+            }
+            .MuiButtonBase-root.MuiButtonBase-disabled {
+                cursor: default;
+                pointer-events: none;
+            }
+            .MuiButton-root {
+                color: rgba(0, 0, 0, 0.87);
+                padding: 8px 16px;
+                font-size: 0.875rem;
+                min-width: 64px;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                min-height: 36px;
+                box-sizing: border-box;
+                line-height: 1.4em;
+                font-family: Calibri, "Gill Sans", "Gill Sans MT", Myriad Pro, Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial,
+                    sans-serif;
+                font-weight: 500;
+                border-radius: 4px;
+                text-transform: uppercase;
+            }
+            .MuiButton-root:hover {
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+            .MuiButton-root.MuiButton-disabled {
+                color: rgba(0, 0, 0, 0.26);
+            }
+            @media (hover: none) {
+                .MuiButton-root:hover {
+                    background-color: transparent;
+                }
+            }
+            .MuiButton-root:hover.MuiButton-disabled {
+                background-color: transparent;
+            }
+            .MuiButton-label {
+                width: 100%;
+                display: inherit;
+                align-items: inherit;
+                justify-content: inherit;
+            }
+            .MuiButton-textPrimary {
+                color: #5f9b65;
+            }
+            .MuiButton-textPrimary:hover {
+                background-color: rgba(95, 155, 101, 0.08);
+            }
+            @media (hover: none) {
+                .MuiButton-textPrimary:hover {
+                    background-color: transparent;
+                }
+            }
+            .MuiButton-textSecondary {
+                color: #5f9b65;
+            }
+            .MuiButton-textSecondary:hover {
+                background-color: rgba(95, 155, 101, 0.08);
+            }
+            @media (hover: none) {
+                .MuiButton-textSecondary:hover {
+                    background-color: transparent;
+                }
+            }
+            .MuiButton-outlined {
+                border: 1px solid rgba(0, 0, 0, 0.23);
+            }
+            .MuiButton-outlinedPrimary {
+                border: 1px solid rgba(95, 155, 101, 0.5);
+            }
+            .MuiButton-outlinedPrimary:hover {
+                border: 1px solid #5f9b65;
+            }
+            .MuiButton-outlinedPrimary.MuiButton-disabled {
+                border: 1px solid rgba(0, 0, 0, 0.26);
+            }
+            .MuiButton-outlinedSecondary {
+                border: 1px solid rgba(95, 155, 101, 0.5);
+            }
+            .MuiButton-outlinedSecondary:hover {
+                border: 1px solid #5f9b65;
+            }
+            .MuiButton-outlinedSecondary.MuiButton-disabled {
+                border: 1px solid rgba(0, 0, 0, 0.26);
+            }
+            .MuiButton-contained {
+                color: rgba(0, 0, 0, 0.87);
+                box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+                background-color: #e0e0e0;
+            }
+            .MuiButton-contained.MuiButton-focusVisible {
+                box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+            }
+            .MuiButton-contained:active {
+                box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+            }
+            .MuiButton-contained.MuiButton-disabled {
+                color: rgba(0, 0, 0, 0.26);
+                box-shadow: none;
+                background-color: rgba(0, 0, 0, 0.12);
+            }
+            .MuiButton-contained:hover {
+                background-color: #d5d5d5;
+            }
+            @media (hover: none) {
+                .MuiButton-contained:hover {
+                    background-color: #e0e0e0;
+                }
+            }
+            .MuiButton-contained:hover.MuiButton-disabled {
+                background-color: rgba(0, 0, 0, 0.12);
+            }
+            .MuiButton-containedPrimary {
+                color: #fff;
+                background-color: #5f9b65;
+            }
+            .MuiButton-containedPrimary:hover {
+                background-color: rgb(66, 108, 70);
+            }
+            @media (hover: none) {
+                .MuiButton-containedPrimary:hover {
+                    background-color: #5f9b65;
+                }
+            }
+            .MuiButton-containedSecondary {
+                color: #fff;
+                background-color: #5f9b65;
+            }
+            .MuiButton-containedSecondary:hover {
+                background-color: rgb(66, 108, 70);
+            }
+            @media (hover: none) {
+                .MuiButton-containedSecondary:hover {
+                    background-color: #5f9b65;
+                }
+            }
+            .MuiButton-fab {
+                width: 56px;
+                height: 56px;
+                padding: 0;
+                min-width: 0;
+                box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+                border-radius: 50%;
+            }
+            .MuiButton-fab:active {
+                box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+            }
+            .MuiButton-extendedFab {
+                width: auto;
+                height: 48px;
+                padding: 0 16px;
+                min-width: 48px;
+                border-radius: 24px;
+            }
+            .MuiButton-colorInherit {
+                color: inherit;
+            }
+            .MuiButton-mini {
+                width: 40px;
+                height: 40px;
+            }
+            .MuiButton-sizeSmall {
+                padding: 7px 8px;
+                min-width: 64px;
+                font-size: 0.8125rem;
+                min-height: 32px;
+            }
+            .MuiButton-sizeLarge {
+                padding: 8px 24px;
+                min-width: 112px;
+                font-size: 0.9375rem;
+                min-height: 40px;
+            }
+            .MuiButton-fullWidth {
+                width: 100%;
+            }
+            .MuiModal-root {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1300;
+                position: fixed;
+            }
+            .MuiModal-hidden {
+                visibility: hidden;
+            }
+            .MuiPaper-root {
+                background-color: #fff;
+            }
+            .MuiPaper-rounded {
+                border-radius: 4px;
+            }
+            .MuiPaper-elevation0 {
+                box-shadow: none;
+            }
+            .MuiPaper-elevation1 {
+                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation2 {
+                box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation3 {
+                box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation4 {
+                box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation5 {
+                box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation6 {
+                box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation7 {
+                box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation8 {
+                box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation9 {
+                box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation10 {
+                box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation11 {
+                box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation12 {
+                box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation13 {
+                box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation14 {
+                box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2), 0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation15 {
+                box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation16 {
+                box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation17 {
+                box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2), 0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation18 {
+                box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2), 0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation19 {
+                box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2), 0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation20 {
+                box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation21 {
+                box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation22 {
+                box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2), 0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation23 {
+                box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
+            }
+            .MuiPaper-elevation24 {
+                box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+            }
+            .MuiDrawer-docked {
+                flex: 0 0 auto;
+            }
+            .MuiDrawer-paper {
+                top: 0;
+                flex: 1 0 auto;
+                height: 100%;
+                display: flex;
+                z-index: 1200;
+                outline: none;
+                position: fixed;
+                overflow-y: auto;
+                flex-direction: column;
+                -webkit-overflow-scrolling: touch;
+            }
+            .MuiDrawer-paperAnchorLeft {
+                left: 0;
+                right: auto;
+            }
+            .MuiDrawer-paperAnchorRight {
+                left: auto;
+                right: 0;
+            }
+            .MuiDrawer-paperAnchorTop {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: auto;
+                height: auto;
+                max-height: 100%;
+            }
+            .MuiDrawer-paperAnchorBottom {
+                top: auto;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: auto;
+                max-height: 100%;
+            }
+            .MuiDrawer-paperAnchorDockedLeft {
+                border-right: 1px solid rgba(0, 0, 0, 0.12);
+            }
+            .MuiDrawer-paperAnchorDockedTop {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+            }
+            .MuiDrawer-paperAnchorDockedRight {
+                border-left: 1px solid rgba(0, 0, 0, 0.12);
+            }
+            .MuiDrawer-paperAnchorDockedBottom {
+                border-top: 1px solid rgba(0, 0, 0, 0.12);
+            }
+            .MuiSvgIcon-root {
+                fill: currentColor;
+                width: 1em;
+                height: 1em;
+                display: inline-block;
+                font-size: 24px;
+                transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                user-select: none;
+                flex-shrink: 0;
+            }
+            .MuiSvgIcon-colorPrimary {
+                color: #5f9b65;
+            }
+            .MuiSvgIcon-colorSecondary {
+                color: #5f9b65;
+            }
+            .MuiSvgIcon-colorAction {
+                color: rgba(0, 0, 0, 0.54);
+            }
+            .MuiSvgIcon-colorError {
+                color: #bf360c;
+            }
+            .MuiSvgIcon-colorDisabled {
+                color: rgba(0, 0, 0, 0.26);
+            }
+            .MuiSvgIcon-fontSizeInherit {
+                font-size: inherit;
+            }
+            .MuiSvgIcon-fontSizeSmall {
+                font-size: 20px;
+            }
+            .MuiSvgIcon-fontSizeLarge {
+                font-size: 36px;
+            }
+            .MuiIconButton-root {
+                flex: 0 0 auto;
+                color: rgba(0, 0, 0, 0.54);
+                padding: 12px;
+                overflow: visible;
+                font-size: 1.5rem;
+                text-align: center;
+                transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                border-radius: 50%;
+            }
+            .MuiIconButton-root:hover {
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+            .MuiIconButton-root.MuiIconButton-disabled {
+                color: rgba(0, 0, 0, 0.26);
+            }
+            @media (hover: none) {
+                .MuiIconButton-root:hover {
+                    background-color: transparent;
+                }
+            }
+            .MuiIconButton-root:hover.MuiIconButton-disabled {
+                background-color: transparent;
+            }
+            .MuiIconButton-colorInherit {
+                color: inherit;
+            }
+            .MuiIconButton-colorPrimary {
+                color: #5f9b65;
+            }
+            .MuiIconButton-colorPrimary:hover {
+                background-color: rgba(95, 155, 101, 0.08);
+            }
+            @media (hover: none) {
+                .MuiIconButton-colorPrimary:hover {
+                    background-color: transparent;
+                }
+            }
+            .MuiIconButton-colorSecondary {
+                color: #5f9b65;
+            }
+            .MuiIconButton-colorSecondary:hover {
+                background-color: rgba(95, 155, 101, 0.08);
+            }
+            @media (hover: none) {
+                .MuiIconButton-colorSecondary:hover {
+                    background-color: transparent;
+                }
+            }
+            .MuiIconButton-label {
+                width: 100%;
+                display: flex;
+                align-items: inherit;
+                justify-content: inherit;
+            }
+            html {
+                box-sizing: border-box;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            *,
+            *::before,
+            *::after {
+                box-sizing: inherit;
+            }
+            body {
+                margin: 0;
+                background-color: #fff;
+            }
+            @media print {
+                body {
+                    background-color: #fff;
+                }
+            }
+            @media (min-width: 0px) and (max-width: 599.95px) {
+                .jss103 {
+                    display: none;
+                }
+            }
+            @media (min-width: 0px) {
+                .jss104 {
+                    display: none;
+                }
+            }
+            @media (max-width: 599.95px) {
+                .jss105 {
+                    display: none;
+                }
+            }
+            @media (min-width: 600px) and (max-width: 959.95px) {
+                .jss106 {
+                    display: none;
+                }
+            }
+            @media (min-width: 600px) {
+                .jss107 {
+                    display: none;
+                }
+            }
+            @media (max-width: 959.95px) {
+                .jss108 {
+                    display: none;
+                }
+            }
+            @media (min-width: 960px) and (max-width: 1279.95px) {
+                .jss109 {
+                    display: none;
+                }
+            }
+            @media (min-width: 960px) {
+                .jss110 {
+                    display: none;
+                }
+            }
+            @media (max-width: 1279.95px) {
+                .jss111 {
+                    display: none;
+                }
+            }
+            @media (min-width: 1280px) and (max-width: 1919.95px) {
+                .jss112 {
+                    display: none;
+                }
+            }
+            @media (min-width: 1280px) {
+                .jss113 {
+                    display: none;
+                }
+            }
+            @media (max-width: 1919.95px) {
+                .jss114 {
+                    display: none;
+                }
+            }
+            @media (min-width: 1920px) {
+                .jss115 {
+                    display: none;
+                }
+            }
+            @media (min-width: 1920px) {
+                .jss116 {
+                    display: none;
+                }
+            }
+            @media (min-width: 0px) {
+                .jss117 {
+                    display: none;
+                }
+            }
+            .MuiSnackbar-root {
+                left: 0;
+                right: 0;
+                z-index: 1400;
+                display: flex;
+                position: fixed;
+                align-items: center;
+                justify-content: center;
+            }
+            .MuiSnackbar-anchorOriginTopCenter {
+                top: 0;
+            }
+            @media (min-width: 960px) {
+                .MuiSnackbar-anchorOriginTopCenter {
+                    left: 50%;
+                    right: auto;
+                    transform: translateX(-50%);
+                }
+            }
+            .MuiSnackbar-anchorOriginBottomCenter {
+                bottom: 0;
+            }
+            @media (min-width: 960px) {
+                .MuiSnackbar-anchorOriginBottomCenter {
+                    left: 50%;
+                    right: auto;
+                    transform: translateX(-50%);
+                }
+            }
+            .MuiSnackbar-anchorOriginTopRight {
+                top: 0;
+                justify-content: flex-end;
+            }
+            @media (min-width: 960px) {
+                .MuiSnackbar-anchorOriginTopRight {
+                    top: 24px;
+                    left: auto;
+                    right: 24px;
+                }
+            }
+            .MuiSnackbar-anchorOriginBottomRight {
+                bottom: 0;
+                justify-content: flex-end;
+            }
+            @media (min-width: 960px) {
+                .MuiSnackbar-anchorOriginBottomRight {
+                    left: auto;
+                    right: 24px;
+                    bottom: 24px;
+                }
+            }
+            .MuiSnackbar-anchorOriginTopLeft {
+                top: 0;
+                justify-content: flex-start;
+            }
+            @media (min-width: 960px) {
+                .MuiSnackbar-anchorOriginTopLeft {
+                    top: 24px;
+                    left: 24px;
+                    right: auto;
+                }
+            }
+            .MuiSnackbar-anchorOriginBottomLeft {
+                bottom: 0;
+                justify-content: flex-start;
+            }
+            @media (min-width: 960px) {
+                .MuiSnackbar-anchorOriginBottomLeft {
+                    left: 24px;
+                    right: auto;
+                    bottom: 24px;
+                }
+            }
+            .MuiAppBar-root {
+                width: 100%;
+                display: flex;
+                z-index: 1100;
+                box-sizing: border-box;
+                flex-shrink: 0;
+                flex-direction: column;
+            }
+            .MuiAppBar-positionFixed {
+                top: 0;
+                left: auto;
+                right: 0;
+                position: fixed;
+            }
+            .MuiAppBar-positionAbsolute {
+                top: 0;
+                left: auto;
+                right: 0;
+                position: absolute;
+            }
+            .MuiAppBar-positionSticky {
+                top: 0;
+                left: auto;
+                right: 0;
+                position: sticky;
+            }
+            .MuiAppBar-positionStatic {
+                position: static;
+            }
+            .MuiAppBar-positionRelative {
+                position: relative;
+            }
+            .MuiAppBar-colorDefault {
+                color: rgba(0, 0, 0, 0.87);
+                background-color: #fafafa;
+            }
+            .MuiAppBar-colorPrimary {
+                color: #fff;
+                background-color: #5f9b65;
+            }
+            .MuiAppBar-colorSecondary {
+                color: #fff;
+                background-color: #5f9b65;
+            }
+            .MuiToolbar-root {
+                display: flex;
+                position: relative;
+                align-items: center;
+            }
+            .MuiToolbar-gutters {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            @media (min-width: 600px) {
+                .MuiToolbar-gutters {
+                    padding-left: 24px;
+                    padding-right: 24px;
+                }
+            }
+            .MuiToolbar-regular {
+                min-height: 56px;
+            }
+            @media (min-width: 0px) and (orientation: landscape) {
+                .MuiToolbar-regular {
+                    min-height: 48px;
+                }
+            }
+            @media (min-width: 600px) {
+                .MuiToolbar-regular {
+                    min-height: 64px;
+                }
+            }
+            .MuiToolbar-dense {
+                min-height: 48px;
+            }
+            .MuiGrid-container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+            }
+            .MuiGrid-item {
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .MuiGrid-zeroMinWidth {
+                min-width: 0;
+            }
+            .MuiGrid-direction-xs-column {
+                flex-direction: column;
+            }
+            .MuiGrid-direction-xs-column-reverse {
+                flex-direction: column-reverse;
+            }
+            .MuiGrid-direction-xs-row-reverse {
+                flex-direction: row-reverse;
+            }
+            .MuiGrid-wrap-xs-nowrap {
+                flex-wrap: nowrap;
+            }
+            .MuiGrid-wrap-xs-wrap-reverse {
+                flex-wrap: wrap-reverse;
+            }
+            .MuiGrid-align-items-xs-center {
+                align-items: center;
+            }
+            .MuiGrid-align-items-xs-flex-start {
+                align-items: flex-start;
+            }
+            .MuiGrid-align-items-xs-flex-end {
+                align-items: flex-end;
+            }
+            .MuiGrid-align-items-xs-baseline {
+                align-items: baseline;
+            }
+            .MuiGrid-align-content-xs-center {
+                align-content: center;
+            }
+            .MuiGrid-align-content-xs-flex-start {
+                align-content: flex-start;
+            }
+            .MuiGrid-align-content-xs-flex-end {
+                align-content: flex-end;
+            }
+            .MuiGrid-align-content-xs-space-between {
+                align-content: space-between;
+            }
+            .MuiGrid-align-content-xs-space-around {
+                align-content: space-around;
+            }
+            .MuiGrid-justify-xs-center {
+                justify-content: center;
+            }
+            .MuiGrid-justify-xs-flex-end {
+                justify-content: flex-end;
+            }
+            .MuiGrid-justify-xs-space-between {
+                justify-content: space-between;
+            }
+            .MuiGrid-justify-xs-space-around {
+                justify-content: space-around;
+            }
+            .MuiGrid-justify-xs-space-evenly {
+                justify-content: space-evenly;
+            }
+            .MuiGrid-spacing-xs-8 {
+                width: calc(100% + 8px);
+                margin: -4px;
+            }
+            .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+                padding: 4px;
+            }
+            .MuiGrid-spacing-xs-16 {
+                width: calc(100% + 16px);
+                margin: -8px;
+            }
+            .MuiGrid-spacing-xs-16 > .MuiGrid-item {
+                padding: 8px;
+            }
+            .MuiGrid-spacing-xs-24 {
+                width: calc(100% + 24px);
+                margin: -12px;
+            }
+            .MuiGrid-spacing-xs-24 > .MuiGrid-item {
+                padding: 12px;
+            }
+            .MuiGrid-spacing-xs-32 {
+                width: calc(100% + 32px);
+                margin: -16px;
+            }
+            .MuiGrid-spacing-xs-32 > .MuiGrid-item {
+                padding: 16px;
+            }
+            .MuiGrid-spacing-xs-40 {
+                width: calc(100% + 40px);
+                margin: -20px;
+            }
+            .MuiGrid-spacing-xs-40 > .MuiGrid-item {
+                padding: 20px;
+            }
+            .MuiGrid-grid-xs-auto {
+                flex-grow: 0;
+                max-width: none;
+                flex-basis: auto;
+            }
+            .MuiGrid-grid-xs-true {
+                flex-grow: 1;
+                max-width: 100%;
+                flex-basis: 0;
+            }
+            .MuiGrid-grid-xs-1 {
+                flex-grow: 0;
+                max-width: 8.333333%;
+                flex-basis: 8.333333%;
+            }
+            .MuiGrid-grid-xs-2 {
+                flex-grow: 0;
+                max-width: 16.666667%;
+                flex-basis: 16.666667%;
+            }
+            .MuiGrid-grid-xs-3 {
+                flex-grow: 0;
+                max-width: 25%;
+                flex-basis: 25%;
+            }
+            .MuiGrid-grid-xs-4 {
+                flex-grow: 0;
+                max-width: 33.333333%;
+                flex-basis: 33.333333%;
+            }
+            .MuiGrid-grid-xs-5 {
+                flex-grow: 0;
+                max-width: 41.666667%;
+                flex-basis: 41.666667%;
+            }
+            .MuiGrid-grid-xs-6 {
+                flex-grow: 0;
+                max-width: 50%;
+                flex-basis: 50%;
+            }
+            .MuiGrid-grid-xs-7 {
+                flex-grow: 0;
+                max-width: 58.333333%;
+                flex-basis: 58.333333%;
+            }
+            .MuiGrid-grid-xs-8 {
+                flex-grow: 0;
+                max-width: 66.666667%;
+                flex-basis: 66.666667%;
+            }
+            .MuiGrid-grid-xs-9 {
+                flex-grow: 0;
+                max-width: 75%;
+                flex-basis: 75%;
+            }
+            .MuiGrid-grid-xs-10 {
+                flex-grow: 0;
+                max-width: 83.333333%;
+                flex-basis: 83.333333%;
+            }
+            .MuiGrid-grid-xs-11 {
+                flex-grow: 0;
+                max-width: 91.666667%;
+                flex-basis: 91.666667%;
+            }
+            .MuiGrid-grid-xs-12 {
+                flex-grow: 0;
+                max-width: 100%;
+                flex-basis: 100%;
+            }
+            @media (min-width: 600px) {
+                .MuiGrid-grid-sm-auto {
+                    flex-grow: 0;
+                    max-width: none;
+                    flex-basis: auto;
+                }
+                .MuiGrid-grid-sm-true {
+                    flex-grow: 1;
+                    max-width: 100%;
+                    flex-basis: 0;
+                }
+                .MuiGrid-grid-sm-1 {
+                    flex-grow: 0;
+                    max-width: 8.333333%;
+                    flex-basis: 8.333333%;
+                }
+                .MuiGrid-grid-sm-2 {
+                    flex-grow: 0;
+                    max-width: 16.666667%;
+                    flex-basis: 16.666667%;
+                }
+                .MuiGrid-grid-sm-3 {
+                    flex-grow: 0;
+                    max-width: 25%;
+                    flex-basis: 25%;
+                }
+                .MuiGrid-grid-sm-4 {
+                    flex-grow: 0;
+                    max-width: 33.333333%;
+                    flex-basis: 33.333333%;
+                }
+                .MuiGrid-grid-sm-5 {
+                    flex-grow: 0;
+                    max-width: 41.666667%;
+                    flex-basis: 41.666667%;
+                }
+                .MuiGrid-grid-sm-6 {
+                    flex-grow: 0;
+                    max-width: 50%;
+                    flex-basis: 50%;
+                }
+                .MuiGrid-grid-sm-7 {
+                    flex-grow: 0;
+                    max-width: 58.333333%;
+                    flex-basis: 58.333333%;
+                }
+                .MuiGrid-grid-sm-8 {
+                    flex-grow: 0;
+                    max-width: 66.666667%;
+                    flex-basis: 66.666667%;
+                }
+                .MuiGrid-grid-sm-9 {
+                    flex-grow: 0;
+                    max-width: 75%;
+                    flex-basis: 75%;
+                }
+                .MuiGrid-grid-sm-10 {
+                    flex-grow: 0;
+                    max-width: 83.333333%;
+                    flex-basis: 83.333333%;
+                }
+                .MuiGrid-grid-sm-11 {
+                    flex-grow: 0;
+                    max-width: 91.666667%;
+                    flex-basis: 91.666667%;
+                }
+                .MuiGrid-grid-sm-12 {
+                    flex-grow: 0;
+                    max-width: 100%;
+                    flex-basis: 100%;
+                }
+            }
+            @media (min-width: 960px) {
+                .MuiGrid-grid-md-auto {
+                    flex-grow: 0;
+                    max-width: none;
+                    flex-basis: auto;
+                }
+                .MuiGrid-grid-md-true {
+                    flex-grow: 1;
+                    max-width: 100%;
+                    flex-basis: 0;
+                }
+                .MuiGrid-grid-md-1 {
+                    flex-grow: 0;
+                    max-width: 8.333333%;
+                    flex-basis: 8.333333%;
+                }
+                .MuiGrid-grid-md-2 {
+                    flex-grow: 0;
+                    max-width: 16.666667%;
+                    flex-basis: 16.666667%;
+                }
+                .MuiGrid-grid-md-3 {
+                    flex-grow: 0;
+                    max-width: 25%;
+                    flex-basis: 25%;
+                }
+                .MuiGrid-grid-md-4 {
+                    flex-grow: 0;
+                    max-width: 33.333333%;
+                    flex-basis: 33.333333%;
+                }
+                .MuiGrid-grid-md-5 {
+                    flex-grow: 0;
+                    max-width: 41.666667%;
+                    flex-basis: 41.666667%;
+                }
+                .MuiGrid-grid-md-6 {
+                    flex-grow: 0;
+                    max-width: 50%;
+                    flex-basis: 50%;
+                }
+                .MuiGrid-grid-md-7 {
+                    flex-grow: 0;
+                    max-width: 58.333333%;
+                    flex-basis: 58.333333%;
+                }
+                .MuiGrid-grid-md-8 {
+                    flex-grow: 0;
+                    max-width: 66.666667%;
+                    flex-basis: 66.666667%;
+                }
+                .MuiGrid-grid-md-9 {
+                    flex-grow: 0;
+                    max-width: 75%;
+                    flex-basis: 75%;
+                }
+                .MuiGrid-grid-md-10 {
+                    flex-grow: 0;
+                    max-width: 83.333333%;
+                    flex-basis: 83.333333%;
+                }
+                .MuiGrid-grid-md-11 {
+                    flex-grow: 0;
+                    max-width: 91.666667%;
+                    flex-basis: 91.666667%;
+                }
+                .MuiGrid-grid-md-12 {
+                    flex-grow: 0;
+                    max-width: 100%;
+                    flex-basis: 100%;
+                }
+            }
+            @media (min-width: 1280px) {
+                .MuiGrid-grid-lg-auto {
+                    flex-grow: 0;
+                    max-width: none;
+                    flex-basis: auto;
+                }
+                .MuiGrid-grid-lg-true {
+                    flex-grow: 1;
+                    max-width: 100%;
+                    flex-basis: 0;
+                }
+                .MuiGrid-grid-lg-1 {
+                    flex-grow: 0;
+                    max-width: 8.333333%;
+                    flex-basis: 8.333333%;
+                }
+                .MuiGrid-grid-lg-2 {
+                    flex-grow: 0;
+                    max-width: 16.666667%;
+                    flex-basis: 16.666667%;
+                }
+                .MuiGrid-grid-lg-3 {
+                    flex-grow: 0;
+                    max-width: 25%;
+                    flex-basis: 25%;
+                }
+                .MuiGrid-grid-lg-4 {
+                    flex-grow: 0;
+                    max-width: 33.333333%;
+                    flex-basis: 33.333333%;
+                }
+                .MuiGrid-grid-lg-5 {
+                    flex-grow: 0;
+                    max-width: 41.666667%;
+                    flex-basis: 41.666667%;
+                }
+                .MuiGrid-grid-lg-6 {
+                    flex-grow: 0;
+                    max-width: 50%;
+                    flex-basis: 50%;
+                }
+                .MuiGrid-grid-lg-7 {
+                    flex-grow: 0;
+                    max-width: 58.333333%;
+                    flex-basis: 58.333333%;
+                }
+                .MuiGrid-grid-lg-8 {
+                    flex-grow: 0;
+                    max-width: 66.666667%;
+                    flex-basis: 66.666667%;
+                }
+                .MuiGrid-grid-lg-9 {
+                    flex-grow: 0;
+                    max-width: 75%;
+                    flex-basis: 75%;
+                }
+                .MuiGrid-grid-lg-10 {
+                    flex-grow: 0;
+                    max-width: 83.333333%;
+                    flex-basis: 83.333333%;
+                }
+                .MuiGrid-grid-lg-11 {
+                    flex-grow: 0;
+                    max-width: 91.666667%;
+                    flex-basis: 91.666667%;
+                }
+                .MuiGrid-grid-lg-12 {
+                    flex-grow: 0;
+                    max-width: 100%;
+                    flex-basis: 100%;
+                }
+            }
+            @media (min-width: 1920px) {
+                .MuiGrid-grid-xl-auto {
+                    flex-grow: 0;
+                    max-width: none;
+                    flex-basis: auto;
+                }
+                .MuiGrid-grid-xl-true {
+                    flex-grow: 1;
+                    max-width: 100%;
+                    flex-basis: 0;
+                }
+                .MuiGrid-grid-xl-1 {
+                    flex-grow: 0;
+                    max-width: 8.333333%;
+                    flex-basis: 8.333333%;
+                }
+                .MuiGrid-grid-xl-2 {
+                    flex-grow: 0;
+                    max-width: 16.666667%;
+                    flex-basis: 16.666667%;
+                }
+                .MuiGrid-grid-xl-3 {
+                    flex-grow: 0;
+                    max-width: 25%;
+                    flex-basis: 25%;
+                }
+                .MuiGrid-grid-xl-4 {
+                    flex-grow: 0;
+                    max-width: 33.333333%;
+                    flex-basis: 33.333333%;
+                }
+                .MuiGrid-grid-xl-5 {
+                    flex-grow: 0;
+                    max-width: 41.666667%;
+                    flex-basis: 41.666667%;
+                }
+                .MuiGrid-grid-xl-6 {
+                    flex-grow: 0;
+                    max-width: 50%;
+                    flex-basis: 50%;
+                }
+                .MuiGrid-grid-xl-7 {
+                    flex-grow: 0;
+                    max-width: 58.333333%;
+                    flex-basis: 58.333333%;
+                }
+                .MuiGrid-grid-xl-8 {
+                    flex-grow: 0;
+                    max-width: 66.666667%;
+                    flex-basis: 66.666667%;
+                }
+                .MuiGrid-grid-xl-9 {
+                    flex-grow: 0;
+                    max-width: 75%;
+                    flex-basis: 75%;
+                }
+                .MuiGrid-grid-xl-10 {
+                    flex-grow: 0;
+                    max-width: 83.333333%;
+                    flex-basis: 83.333333%;
+                }
+                .MuiGrid-grid-xl-11 {
+                    flex-grow: 0;
+                    max-width: 91.666667%;
+                    flex-basis: 91.666667%;
+                }
+                .MuiGrid-grid-xl-12 {
+                    flex-grow: 0;
+                    max-width: 100%;
+                    flex-basis: 100%;
+                }
+            }
+            .MuiPopover-paper {
+                outline: none;
+                position: absolute;
+                min-width: 16px;
+                max-width: calc(100% - 32px);
+                overflow-y: auto;
+                overflow-x: hidden;
+                min-height: 16px;
+                max-height: calc(100% - 32px);
+            }
+            .Layout-main {
+                margin: 50px auto 15px auto;
+                max-width: 1200px;
+            }
+            @media (max-width: 959.95px) {
+                .Layout-main {
+                    margin-top: 0;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+            }
+            p {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+            p:first-of-type {
+                margin-top: 0;
+            }
+            p:last-of-type {
+                margin-bottom: 0;
+            }
+            .Layout-searchResultsArea {
+                top: 0;
+                width: 100%;
+                z-index: 1100;
+                position: absolute;
+            }
+            .NotificationsMenu-root {
+                display: inline-block;
+                vertical-align: top;
+            }
+            .NotificationsMenu-drawerPaper {
+                width: 270px;
+                z-index: 1500;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+            }
+            .NotificationsMenu-badgeContainer {
+                padding: none;
+                vertical-align: inherit;
+            }
+            .NotificationsMenu-badge {
+                top: 0;
+                color: rgba(0, 0, 0, 0.6);
+                right: -15px;
+                font-size: 12px;
+                font-weight: 500;
+                pointer-events: none;
+                background-color: inherit;
+            }
+            .NotificationsMenu-icon {
+                color: rgba(0, 0, 0, 0.8);
+            }
+            .NotificationsMenu-hideButton {
+                top: 0;
+                right: 5px;
+                position: absolute;
+            }
+            .NotificationsMenu-cancel {
+                color: rgba(0, 0, 0, 0.3);
+                margin: 10px;
+                cursor: pointer;
+            }
+            .NotificationsMenu-tabBar {
+                background: #f5f5f5;
+            }
+            .NotificationsMenu-tabLabel {
+                color: rgba(0, 0, 0, 0.8);
+                min-width: auto;
+            }
+            .NotificationsMenu-hiddenTab {
+                width: 24px;
+                min-width: auto;
+                pointer-events: none;
+            }
+            .TableOfContents-stickyContainer {
+                width: 240px;
+                height: 100%;
+                opacity: 0.5;
+                position: absolute;
+                margin-top: -1px;
+            }
+            @media (min-width: 1920px) {
+                .TableOfContents-stickyContainer {
+                    left: -100px;
+                }
+            }
+            @media (min-width: 1280px) {
+                .TableOfContents-stickyContainer {
+                    left: -50px;
+                }
+            }
+            .TableOfContents-stickyContainer:hover {
+                opacity: 1;
+            }
+            .TableOfContents-stickyBlock {
+                top: 92px;
+                height: 80vh;
+                position: sticky;
+                font-size: 12px;
+                direction: rtl;
+                text-align: left;
+                overflow-y: scroll;
+                line-height: 1;
+                margin-left: 1px;
+                padding-left: 16px;
+            }
+            .TableOfContents-stickyBlock::-webkit-scrollbar {
+                width: 1px;
+            }
+            .TableOfContents-stickyBlock::-webkit-scrollbar-track {
+                background: none;
+            }
+            .TableOfContents-stickyBlock::-webkit-scrollbar-thumb {
+                background: #e0e0e0;
+            }
+            .TableOfContents-stickyBlock::-webkit-scrollbar-thumb:hover {
+                background: #616161;
+            }
+            .Header-appBar {
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.05);
+            }
+            .Header-root {
+                flex-grow: 1;
+            }
+            @media print {
+                .Header-root {
+                    display: none;
+                }
+            }
+            .Header-title {
+                flex: 1;
+            }
+            .Header-titleLink {
+                top: 3px;
+                color: rgba(0, 0, 0, 0.87);
+                position: relative;
+                font-size: 19px;
+                vertical-align: middle;
+            }
+            .Header-titleLink:hover,
+            .Header-titleLink:focus,
+            .Header-titleLink:active {
+                opacity: 0.7;
+                text-decoration: none;
+            }
+            .Header-subtitle {
+                margin-left: 1em;
+                border-left: 1px solid #bdbdbd;
+                padding-left: 1em;
+                text-transform: uppercase;
+            }
+            .Header-menuButton {
+                margin-left: -8px;
+                margin-right: 8px;
+            }
+            .Header-rightHeaderItems {
+                display: flex;
+                margin-right: -8px;
+            }
+            .Header-headroomPinnedOpen .headroom--unpinned {
+                transform: none;
+            }
+            .Header-headroomPinnedOpen .headroom--unfixed {
+                position: fixed;
+            }
+            .NavigationMenu-drawerPaperWithoutToC {
+                width: 225px;
+            }
+            .NavigationMenu-drawerPaperWithToC {
+                width: 300px;
+                overflow: hidden;
+            }
+            .NavigationMenu-tableOfContents {
+                left: 55px;
+                height: 100%;
+                padding: 16px 0 16px 16px;
+                display: none;
+                position: absolute;
+                max-width: 247px;
+                overflow-y: scroll;
+            }
+            @media (max-width: 959.95px) {
+                .NavigationMenu-tableOfContents {
+                    display: block;
+                }
+            }
+            .NavigationMenu-menuItem {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 16px;
+            }
+            .NavigationMenu-indented {
+                padding-left: 35px;
+            }
+            .NavigationMenu-navButton {
+                padding: 8px;
+                padding-left: 16px;
+            }
+            .NavigationMenu-navButtons {
+                width: 55px;
+                color: #757575;
+                height: 100%;
+                display: flex;
+                padding-top: 16px;
+                border-right: solid 1px rgba(0, 0, 0, 0.1);
+                flex-direction: column;
+                padding-bottom: 8px;
+                background-color: #f5f5f5;
+            }
+            @media (min-width: 960px) {
+                .NavigationMenu-navButtons {
+                    display: none;
+                }
+            }
+            .NavigationMenu-about {
+                left: 4px;
+                width: 24px;
+                position: relative;
+                font-size: 22px;
+                text-align: center;
+                font-weight: 600;
+                font-family: sans-serif;
+            }
+            .NavigationMenu-sequences {
+                left: 4px;
+                width: 24px;
+                color: #9e9e9e;
+                position: relative;
+                font-size: 20px;
+                text-align: center;
+                font-weight: 600;
+            }
+            .NavigationMenu-divider {
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+            .NavigationMenu-menuIcon {
+                width: 24px;
+                color: #757575;
+            }
+            .NavigationMenu-defaultNavMenu {
+                margin-top: 8px;
+            }
+            @media (max-width: 959.95px) {
+                .NavigationMenu-hideDefaultNav {
+                    display: none;
+                }
+            }
+            @media (min-width: 600px) {
+                .Section-section {
+                    margin-bottom: 32px;
+                }
+            }
+            .Section-root {
+                max-width: 100vw;
+            }
+            @media (min-width: 960px) {
+                .Section-sectionTitleContainer {
+                    display: inline;
+                    max-width: 240px;
+                    text-align: right;
+                }
+            }
+            @media (max-width: 959.95px) {
+                .Section-sectionTitleContainer {
+                    max-width: 720px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 20px;
+                }
+            }
+            @media (max-width: 599.95px) {
+                .Section-sectionTitleContainer {
+                    margin-bottom: 0;
+                }
+            }
+            .Section-sectionTitle {
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                link-underline-position: 72%;
+            }
+            @media (max-width: 959.95px) {
+                .Section-sectionTitle {
+                    padding-top: 8px;
+                    border-top-width: 3px;
+                    border-top-style: solid;
+                }
+            }
+            @media (min-width: 960px) {
+                .Section-sectionTitle {
+                    top: 11px;
+                    display: inline;
+                    position: relative;
+                }
+                .Section-sectionTitle:before {
+                    top: -5px;
+                    width: 100%;
+                    content: "";
+                    position: absolute;
+                    border-top-style: solid;
+                    border-top-width: 3px;
+                }
+            }
+            @media (min-width: 960px) {
+                .Section-sectionTitleTop {
+                    margin-bottom: 24px;
+                }
+            }
+            .Section-sectionContent {
+                max-width: 739px;
+            }
+            @media (min-width: 960px) {
+                .Section-sectionContent {
+                    padding-left: 24px;
+                }
+            }
+            @media (max-width: 959.95px) {
+                .Section-sectionContent {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            @media (max-width: 959.95px) {
+                .Section-heading {
+                    display: inline;
+                }
+                .Section-subscribeWidget {
+                    display: inline-block;
+                    margin-left: 16px;
+                    margin-bottom: 0;
+                }
+            }
+            .VoteButton-root {
+                color: #bdbdbd;
+                width: initial;
+                height: initial;
+                padding: 0;
+                font-size: inherit;
+            }
+            .VoteButton-root:hover {
+                background-color: transparent;
+            }
+            .VoteButton-smallArrow {
+                opacity: 0.6;
+                font-size: 50%;
+            }
+            .VoteButton-right {
+                transform: rotate(-270deg);
+            }
+            .VoteButton-down {
+                transform: rotate(-180deg);
+            }
+            .VoteButton-left {
+                transform: rotate(-90deg);
+            }
+            .VoteButton-bigArrow {
+                top: -70%;
+                opacity: 0;
+                position: absolute;
+                font-size: 82%;
+                transition: opacity 1000ms cubic-bezier(0.74, -0.01, 1, 1) 0ms;
+            }
+            .VoteButton-bigArrowCompleted {
+                top: -75%;
+                font-size: 90%;
+            }
+            .VoteButton-entering {
+                opacity: 1;
+            }
+            .VoteButton-entered {
+                opacity: 1;
+            }
+            .VoteButton-exiting {
+                transition: opacity 150ms cubic-bezier(0.74, -0.01, 1, 1) 0ms;
+            }
+            .ErrorBoundary-errorText {
+                color: #bf360c;
+            }
+            .ContentItemBody-scrollIndicatorWrapper {
+                display: block;
+                position: relative;
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+            .ContentItemBody-hidden {
+                display: none !important;
+            }
+            .ContentItemBody-scrollIndicator {
+                top: 50%;
+                cursor: pointer;
+                position: absolute;
+                margin-top: -28px;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+            }
+            .ContentItemBody-scrollIndicatorLeft {
+                left: 0;
+                border-right: 10px solid #ddd;
+            }
+            .ContentItemBody-scrollIndicatorLeft:hover {
+                border-right: 10px solid #888;
+            }
+            .ContentItemBody-scrollIndicatorRight {
+                right: 0;
+                border-left: 10px solid #ddd;
+            }
+            .ContentItemBody-scrollIndicatorRight:hover {
+                border-left: 10px solid #888;
+            }
+            .ContentItemBody-scrollableLaTeX {
+                margin-top: -1em !important;
+                padding-top: 2em !important;
+                padding-bottom: 2em !important;
+                -ms-overflow-style: -ms-autohiding-scrollbar;
+            }
+            .ContentItemBody-scrollableLaTeX::-webkit-scrollbar {
+                display: none;
+            }
+            .Footer-root {
+                height: 150px;
+            }
+            .UsersAccountMenu-userButton {
+                opacity: 0.8;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .LinkPostMessage-root {
+                color: #757575;
+                font-size: 0.9em;
+                max-width: 100%;
+                overflow-x: hidden;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                margin-bottom: 16px;
+                text-overflow: ellipsis;
+                link-underline-position: 72%;
+            }
+            .PostsPage-root {
+                position: relative;
+            }
+            .PostsPage-post {
+                max-width: 650px;
+            }
+            @media (max-width: 1279.95px) {
+                .PostsPage-post {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .PostsPage-header {
+                display: flex;
+                position: relative;
+                align-items: center;
+                margin-bottom: 16px;
+                justify-content: space-between;
+            }
+            .PostsPage-headerLeft {
+                width: 100%;
+            }
+            .PostsPage-headerVote {
+                position: relative;
+                font-size: 42px;
+                text-align: center;
+            }
+            .PostsPage-divider {
+                margin-top: 16px;
+                border-top: solid 1px rgba(0, 0, 0, 0.1);
+                margin-left: 0;
+                border-left: transparent;
+                margin-bottom: 16px;
+            }
+            .PostsPage-eventHeader {
+                margin-bottom: 0;
+            }
+            .PostsPage-secondaryInfo {
+                font-size: 1.4rem;
+            }
+            .PostsPage-mobileDate {
+                color: #757575;
+                display: inline-block;
+                font-size: 1.16rem;
+                margin-left: 20px;
+            }
+            @media (min-width: 960px) {
+                .PostsPage-mobileDate {
+                    display: none;
+                }
+            }
+            .PostsPage-desktopDate {
+                color: #757575;
+                display: inline-block;
+                font-size: 1.16rem;
+                margin-left: 20px;
+                white-space: no-wrap;
+            }
+            @media (max-width: 959.95px) {
+                .PostsPage-desktopDate {
+                    display: none;
+                }
+            }
+            .PostsPage-commentsLink {
+                color: #757575;
+                font-size: 1.16rem;
+                margin-left: 20px;
+                white-space: no-wrap;
+            }
+            .PostsPage-actions {
+                color: #757575;
+                cursor: pointer;
+                display: inline-block;
+                margin-left: 15px;
+            }
+            .PostsPage-postBody {
+                margin-bottom: 50px;
+            }
+            .PostsPage-postContent {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 1.4rem;
+                font-weight: 400;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                line-height: 2rem;
+                link-underline-position: 72%;
+            }
+            .PostsPage-postContent p.spoiler {
+                margin: 0;
+            }
+            .PostsPage-postContent .spoiler {
+                color: black;
+                padding: 8px;
+                pointer-events: auto;
+                background-color: black;
+            }
+            .PostsPage-postContent .spoiler:before {
+                left: 20px;
+                color: white;
+                content: "spoiler (hover/select to reveal)";
+                position: absolute;
+            }
+            .PostsPage-postContent .spoiler:after {
+                content: "\00a0";
+            }
+            .PostsPage-postContent:hover .spoiler {
+                color: white;
+            }
+            .PostsPage-postContent:hover .spoiler:before {
+                color: black;
+                content: "";
+            }
+            .PostsPage-postContent pre {
+                border: solid 1px #e0e0e0;
+                margin: 1em 0;
+                padding: 1rem;
+                white-space: pre-wrap;
+                border-radius: 5px;
+                background-color: #f5f5f5;
+            }
+            .PostsPage-postContent code {
+                padding: 3px;
+                font-size: 0.9em;
+                font-family: "Liberation Mono", Menlo, Courier, monospace;
+                font-weight: 400;
+                line-height: 1.42;
+                border-radius: 2px;
+                background-color: #f5f5f5;
+            }
+            .PostsPage-postContent blockquote {
+                color: rgba(0, 0, 0, 0.87);
+                margin: 0;
+                font-size: 1.4rem;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                line-height: 2rem;
+                border-left: solid 3px #e0e0e0;
+                padding-top: 16px;
+                font-weight: 400;
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-bottom: 16px;
+                link-underline-position: 72%;
+            }
+            .PostsPage-postContent li {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 1.4rem;
+                font-weight: 400;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                line-height: 2rem;
+                margin-bottom: 0.5rem;
+                link-underline-position: 72%;
+            }
+            .PostsPage-postContent h1 {
+                color: #424242;
+                font-size: 2.8rem;
+                margin-top: 1em;
+                font-weight: 400;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                line-height: 1.13333em;
+                margin-left: -0.02em;
+                link-underline-position: 72%;
+            }
+            .PostsPage-postContent h2 {
+                color: #424242;
+                font-size: 2rem;
+                margin-top: 1em;
+                font-weight: 400;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                line-height: 1.20588em;
+                link-underline-position: 72%;
+            }
+            .PostsPage-postContent h3 {
+                color: #424242;
+                font-size: 2rem;
+                margin-top: 1em;
+                font-weight: 400;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                line-height: 1.20588em;
+                link-underline-position: 72%;
+            }
+            .PostsPage-postContent h4 {
+                color: rgba(0, 0, 0, 0.87);
+                font-size: 1.4rem;
+                font-weight: 600;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                line-height: 2rem;
+                link-underline-position: 72%;
+            }
+            .PostsPage-postContent img {
+                max-width: 100%;
+            }
+            .PostsPage-postContent a,
+            .PostsPage-postContent a:hover,
+            .PostsPage-postContent a:active {
+                color: #5f9b65;
+                text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff,
+                    -0.15em 0 #fff;
+                background-size: 4px 1px;
+                text-decoration: none;
+                background-image: linear-gradient(to right, #5f9b65 72%, transparent 72%);
+                background-repeat: repeat-x;
+                background-position: 0% 72%;
+            }
+            .PostsPage-postContent a *,
+            .PostsPage-postContent a *:after,
+            .PostsPage-postContent a:after,
+            .PostsPage-postContent a *:before,
+            .PostsPage-postContent a:before,
+            .PostsPage-postContent a:hover *,
+            .PostsPage-postContent a:hover *:after,
+            .PostsPage-postContent a:hover:after,
+            .PostsPage-postContent a:hover *:before,
+            .PostsPage-postContent a:hover:before,
+            .PostsPage-postContent a:active *,
+            .PostsPage-postContent a:active *:after,
+            .PostsPage-postContent a:active:after,
+            .PostsPage-postContent a:active *:before,
+            .PostsPage-postContent a:active:before {
+                text-shadow: none;
+            }
+            .PostsPage-postContent pre a,
+            .PostsPage-postContent pre a:hover,
+            .PostsPage-postContent pre a:active {
+                color: #5f9b65;
+                text-shadow: 0.03em 0 #f5f5f5, -0.03em 0 #f5f5f5, 0 0.03em #f5f5f5, 0 -0.03em #f5f5f5, 0.06em 0 #f5f5f5, -0.06em 0 #f5f5f5, 0.09em 0 #f5f5f5, -0.09em 0 #f5f5f5, 0.12em 0 #f5f5f5,
+                    -0.12em 0 #f5f5f5, 0.15em 0 #f5f5f5, -0.15em 0 #f5f5f5;
+                background-size: 4px 1px;
+                text-decoration: none;
+                background-image: linear-gradient(to right, #5f9b65 72%, transparent 72%);
+                background-repeat: repeat-x;
+                background-position: 0% 97%;
+            }
+            .PostsPage-postContent pre a *,
+            .PostsPage-postContent pre a *:after,
+            .PostsPage-postContent pre a:after,
+            .PostsPage-postContent pre a *:before,
+            .PostsPage-postContent pre a:before,
+            .PostsPage-postContent pre a:hover *,
+            .PostsPage-postContent pre a:hover *:after,
+            .PostsPage-postContent pre a:hover:after,
+            .PostsPage-postContent pre a:hover *:before,
+            .PostsPage-postContent pre a:hover:before,
+            .PostsPage-postContent pre a:active *,
+            .PostsPage-postContent pre a:active *:after,
+            .PostsPage-postContent pre a:active:after,
+            .PostsPage-postContent pre a:active *:before,
+            .PostsPage-postContent pre a:active:before {
+                text-shadow: none;
+            }
+            .PostsPage-postContent .spoiler .public-DraftStyleDefault-block {
+                margin: 0;
+            }
+            .PostsPage-subtitle {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+            .PostsPage-voteBottom {
+                display: inline-block;
+                position: relative;
+                font-size: 42px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding-right: 50px;
+                margin-bottom: 40px;
+            }
+            .PostsPage-draft {
+                color: rgb(127, 175, 131);
+            }
+            .PostsPage-bottomNavigation {
+                width: 640px;
+                margin: auto;
+            }
+            @media (max-width: 959.95px) {
+                .PostsPage-bottomNavigation {
+                    width: 100%;
+                }
+            }
+            .PostsPage-inline {
+                display: inline-block;
+            }
+            .PostsPage-feedName {
+                color: #757575;
+                display: inline-block;
+                font-size: 1.16rem;
+                margin-left: 20px;
+            }
+            @media (max-width: 959.95px) {
+                .PostsPage-feedName {
+                    display: none;
+                }
+            }
+            .PostsPage-commentsSection {
+                position: relative;
+                min-height: calc(70vh - 100px);
+                background: white;
+                margin-left: -67px;
+            }
+            @media (max-width: 959.95px) {
+                .PostsPage-commentsSection {
+                    margin-left: 0;
+                    padding-right: 0;
+                }
+            }
+            .PostsPage-footerSection {
+                display: flex;
+                font-size: 1.4em;
+                align-items: center;
+            }
+            .PostsPage-bottomDate {
+                color: #757575;
+            }
+            .PostsAuthors-root {
+                display: inline;
+                text-align: left;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                link-underline-position: 72%;
+            }
+            .PostsAuthors-authorName {
+                font-weight: 600;
+                margin-left: 5px;
+            }
+            .PostsPageTitle-root {
+                color: rgba(0, 0, 0, 0.87);
+                margin: 0 !important;
+                font-size: 3rem;
+                margin-top: 1.2em;
+                font-weight: 400;
+                font-family: warnock-pro, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                line-height: 1.30357em;
+                margin-left: -0.02em;
+                letter-spacing: -0.02em;
+                link-underline-position: 72%;
+            }
+            @media (max-width: 959.95px) {
+                .PostsPageTitle-root {
+                    font-size: 2.5rem;
+                }
+            }
+            .PostsPageTitle-draft {
+                color: #9e9e9e;
+            }
+            .PostsPageTitle-question {
+                color: #757575;
+                display: block;
+                margin-top: 1em;
+            }
+            .PostsPageActions-icon {
+                vertical-align: bottom;
+            }
+            .PostsVote-upvote {
+                margin-bottom: -22px;
+            }
+            .PostsVote-downvote {
+                margin-top: -25px;
+            }
+            .PostsVote-voteScores {
+                margin: 25% 15% 15% 15%;
+            }
+            .PostsVote-voteScore {
+                color: #9e9e9e;
+                z-index: 1;
+                position: relative;
+                font-size: 55%;
+                padding-left: 1px;
+            }
+            .PostsVote-secondaryVoteScore {
+                font-size: 35%;
+                margin-bottom: 2px;
+            }
+            .PostsVote-voteBlock {
+                width: 50px;
+            }
+            .PostsVote-tooltip {
+                color: #9e9e9e;
+                font-size: 1rem;
+                transition: opacity 150ms cubic-bezier(0.4, 0, 1, 1) 0ms;
+                margin-left: 0;
+                background-color: white;
+            }
+        </style>
+        <script type="text/inject-data">
+            %7B%22splitComponents%22%3A%5B%5D%2C%22dehydrated-initial-data%22%3A%22%7B%5C%22messages%5C%22%3A%5B%5D%2C%5C%22postsViewed%5C%22%3A%5B%5D%2C%5C%22apollo%5C%22%3A%7B%5C%22data%5C%22%3A%7B%5C%22ROOT_QUERY%5C%22%3A%7B%5C%22currentUser%5C%22%3Anull%2C%5C%22notifications(%7B%5C%5C%5C%22input%5C%5C%5C%22%3A%7B%5C%5C%5C%22terms%5C%5C%5C%22%3A%7B%5C%5C%5C%22view%5C%5C%5C%22%3A%5C%5C%5C%22userNotifications%5C%5C%5C%22%2C%5C%5C%5C%22userId%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%2C%5C%5C%5C%22type%5C%5C%5C%22%3A%5C%5C%5C%22newMessage%5C%5C%5C%22%2C%5C%5C%5C%22limit%5C%5C%5C%22%3A20%2C%5C%5C%5C%22itemsPerPage%5C%5C%5C%22%3A20%7D%2C%5C%5C%5C%22enableCache%5C%5C%5C%22%3Afalse%2C%5C%5C%5C%22enableTotal%5C%5C%5C%22%3Afalse%7D%7D)%5C%22%3A%7B%5C%22type%5C%22%3A%5C%22id%5C%22%2C%5C%22id%5C%22%3A%5C%22%24ROOT_QUERY.notifications(%7B%5C%5C%5C%22input%5C%5C%5C%22%3A%7B%5C%5C%5C%22terms%5C%5C%5C%22%3A%7B%5C%5C%5C%22view%5C%5C%5C%22%3A%5C%5C%5C%22userNotifications%5C%5C%5C%22%2C%5C%5C%5C%22userId%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%2C%5C%5C%5C%22type%5C%5C%5C%22%3A%5C%5C%5C%22newMessage%5C%5C%5C%22%2C%5C%5C%5C%22limit%5C%5C%5C%22%3A20%2C%5C%5C%5C%22itemsPerPage%5C%5C%5C%22%3A20%7D%2C%5C%5C%5C%22enableCache%5C%5C%5C%22%3Afalse%2C%5C%5C%5C%22enableTotal%5C%5C%5C%22%3Afalse%7D%7D)%5C%22%2C%5C%22generated%5C%22%3Atrue%7D%2C%5C%22post(%7B%5C%5C%5C%22input%5C%5C%5C%22%3A%7B%5C%5C%5C%22selector%5C%5C%5C%22%3A%7B%5C%5C%5C%22documentId%5C%5C%5C%22%3A%5C%5C%5C%22ANDbEKqbdDuBCQAnM%5C%5C%5C%22%7D%2C%5C%5C%5C%22enableCache%5C%5C%5C%22%3Atrue%7D%7D)%5C%22%3A%7B%5C%22type%5C%22%3A%5C%22id%5C%22%2C%5C%22id%5C%22%3A%5C%22%24ROOT_QUERY.post(%7B%5C%5C%5C%22input%5C%5C%5C%22%3A%7B%5C%5C%5C%22selector%5C%5C%5C%22%3A%7B%5C%5C%5C%22documentId%5C%5C%5C%22%3A%5C%5C%5C%22ANDbEKqbdDuBCQAnM%5C%5C%5C%22%7D%2C%5C%5C%5C%22enableCache%5C%5C%5C%22%3Atrue%7D%7D)%5C%22%2C%5C%22generated%5C%22%3Atrue%7D%7D%2C%5C%22%24ROOT_QUERY.notifications(%7B%5C%5C%5C%22input%5C%5C%5C%22%3A%7B%5C%5C%5C%22terms%5C%5C%5C%22%3A%7B%5C%5C%5C%22view%5C%5C%5C%22%3A%5C%5C%5C%22userNotifications%5C%5C%5C%22%2C%5C%5C%5C%22userId%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%2C%5C%5C%5C%22type%5C%5C%5C%22%3A%5C%5C%5C%22newMessage%5C%5C%5C%22%2C%5C%5C%5C%22limit%5C%5C%5C%22%3A20%2C%5C%5C%5C%22itemsPerPage%5C%5C%5C%22%3A20%7D%2C%5C%5C%5C%22enableCache%5C%5C%5C%22%3Afalse%2C%5C%5C%5C%22enableTotal%5C%5C%5C%22%3Afalse%7D%7D)%5C%22%3A%7B%5C%22results%5C%22%3A%5B%5D%2C%5C%22totalCount%5C%22%3Anull%2C%5C%22__typename%5C%22%3A%5C%22MultiNotificationOutput%5C%22%7D%2C%5C%22PostANDbEKqbdDuBCQAnM%5C%22%3A%7B%5C%22_id%5C%22%3A%5C%22ANDbEKqbdDuBCQAnM%5C%22%2C%5C%22title%5C%22%3A%5C%22About%3A%20LessWrong%5C%22%2C%5C%22url%5C%22%3Anull%2C%5C%22slug%5C%22%3A%5C%22about-lesswrong%5C%22%2C%5C%22postedAt%5C%22%3A%5C%222017-09-20T20%3A41%3A07.447Z%5C%22%2C%5C%22createdAt%5C%22%3Anull%2C%5C%22sticky%5C%22%3Afalse%2C%5C%22metaSticky%5C%22%3Afalse%2C%5C%22status%5C%22%3A2%2C%5C%22frontpageDate%5C%22%3A%5C%222018-01-30T00%3A32%3A03.501Z%5C%22%2C%5C%22meta%5C%22%3Afalse%2C%5C%22draft%5C%22%3Anull%2C%5C%22deletedDraft%5C%22%3Afalse%2C%5C%22excerpt%5C%22%3A%5C%22%3Cp%3E%3Cem%3ELessWrong%3C%2Fem%3E%20is%20a%20community%20blog%20devoted%20to%20the%20art%20of%20human%20rationality.%3C%2Fp%3E%5C%5Cn%3Cp%3EIn%202009%2C%20Eliezer%20Yudkowsky%20founded%20the%20site%20and%20went%20on%20to%20write%20several%20years'%20worth%20of%20daily%20blogposts%20about%20rationality.%20They've%20been%20edited%20and%20collected%20into%20_**...%20(Read%20More)%3C%2Fp%3E%5C%5Cn%5C%22%2C%5C%22htmlHighlight%5C%22%3A%5C%22%3Cp%3E%3Cem%3ELessWrong%3C%2Fem%3E%20is%20a%20community%20blog%20devoted%20to%20the%20art%20of%20human%20rationality.%3C%2Fp%3E%5C%5Cn%3Cp%3EIn%202009%2C%20Eliezer%20Yudkowsky%20founded%20the%20site%20and%20went%20on%20to%20write%20several%20years'%20worth%20of%20daily%20blogposts%20about%20rationality.%20They've%20been%20edited%20and%20collected%20into%20%3Cem%3E%3Cstrong%3E%3Ca%20href%3D%5C%5C%5C%22https%3A%2F%2Fwww.lesswrong.com%2Frationality%5C%5C%5C%22%3ERationality%3A%20From%20AI%20to%20Zombies%3C%2Fa%3E%3C%2Fstrong%3E%2C%3C%2Fem%3E%20which%20are%20the%20intellectual%20core%20of%20the%20site.%20In%20the%20intervening%20years%2C%20the%20site%20activity%20died%20down%20quite%20a%20bit%2C%20and%20Scott%20Alexander%20founded%20his%20own%20prolific%20blog%20SlateStarCodex%2C%20whose%20writings%20have%20been%20collected%20into%20%3Cem%3E%3Cstrong%3E%3Ca%20href%3D%5C%5C%5C%22https%3A%2F%2Fwww.lesswrong.com%2Fcodex%5C%5C%5C%22%3EThe%20Codex%3C%2Fa%3E%3C%2Fstrong%3E.%3C%2Fem%3E%3C%2Fp%3E%5C%5Cn%3Cp%3EIn%202017%2C%20the%20LessWrong%20Team%20built%20a%20new%20backend%20and%20user%20interface%20for%20the%20site%2C%20and%20continue%20to%20work%20on%20building%20tools%20for%20making%20intellectual%20progress%20in%20the%20LessWrong%20community.%20As%20of%20launching%20in%20March%202018%2C%20the%20community%20has%20seen%20a%20resurgence%20of%20discussion%20and%20activity.%3C%2Fp%3E%5C%5Cn%3Chr%3E%5C%5Cn%3Cp%3EOur%20goal%20with%20the%20frontpage%20is%20to%20have%20a%20place%20where%20you%20can%20read%20%3Cstrong%3Ethe%20best%20content%20produced%20by%20the%20rationality%20community%3C%2Fstrong%3E%20(subject%20to%20%3Ca%20href%3D%5C%5C%5C%22https%3A%2F%2Fwww.lesserwrong.com%2Fposts%2FtKTcrnKn2YSdxkxKG%2Ffrontpage-posting-and-commenting-guidelines%5C%5C%5C%22%3Eour%20moderation%20guidelines%3C%2Fa%3E).%20Historically%20insightful%20writing%20in%20the%20community%20can%20be%20found%20in%20the%20%3Cem%3ERecommended%20Reading%3C%2Fem%3E%20and%20new%20ideas%20are%20discussed%20in%20the%20%3Cem%3EFeatured%3C%2Fem%3E%20and%20%3Cem%3ERecent%3C%2Fem%3E%20sections.%3C%2Fp%3E%5C%5Cn%5C%22%2C%5C%22viewCount%5C%22%3Anull%2C%5C%22clickCount%5C%22%3Anull%2C%5C%22userId%5C%22%3A%5C%22EQNTWXLKMeWMp2FQS%5C%22%2C%5C%22user%5C%22%3A%7B%5C%22type%5C%22%3A%5C%22id%5C%22%2C%5C%22id%5C%22%3A%5C%22UserEQNTWXLKMeWMp2FQS%5C%22%2C%5C%22generated%5C%22%3Afalse%7D%2C%5C%22coauthors%5C%22%3A%5B%7B%5C%22type%5C%22%3A%5C%22id%5C%22%2C%5C%22id%5C%22%3A%5C%22UserXtphY3uYHwruKqDyG%5C%22%2C%5C%22generated%5C%22%3Afalse%7D%2C%7B%5C%22type%5C%22%3A%5C%22id%5C%22%2C%5C%22id%5C%22%3A%5C%22Userr38pkCm7wF4M44MDQ%5C%22%2C%5C%22generated%5C%22%3Afalse%7D%2C%7B%5C%22type%5C%22%3A%5C%22id%5C%22%2C%5C%22id%5C%22%3A%5C%22UsernLbwLhBaQeG6tCNDN%5C%22%2C%5C%22generated%5C%22%3Afalse%7D%2C%7B%5C%22type%5C%22%3A%5C%22id%5C%22%2C%5C%22id%5C%22%3A%5C%22UserfD4ATtTkdQJ4aSpGH%5C%22%2C%5C%22generated%5C%22%3Afalse%7D%5D%2C%5C%22commentCount%5C%22%3A20%2C%5C%22currentUserVotes%5C%22%3A%5B%5D%2C%5C%22baseScore%5C%22%3A54%2C%5C%22unlisted%5C%22%3Atrue%2C%5C%22score%5C%22%3A0.001327%2C%5C%22feedId%5C%22%3Anull%2C%5C%22feedLink%5C%22%3Anull%2C%5C%22feed%5C%22%3Anull%2C%5C%22lastVisitedAt%5C%22%3Anull%2C%5C%22lastCommentedAt%5C%22%3A%5C%222019-01-06T15%3A52%3A38.273Z%5C%22%2C%5C%22canonicalCollectionSlug%5C%22%3Anull%2C%5C%22curatedDate%5C%22%3Anull%2C%5C%22wordCount%5C%22%3A360%2C%5C%22commentsLocked%5C%22%3Anull%2C%5C%22groupId%5C%22%3Anull%2C%5C%22location%5C%22%3Anull%2C%5C%22googleLocation%5C%22%3Anull%2C%5C%22mongoLocation%5C%22%3Anull%2C%5C%22startTime%5C%22%3Anull%2C%5C%22endTime%5C%22%3Anull%2C%5C%22facebookLink%5C%22%3Anull%2C%5C%22website%5C%22%3Anull%2C%5C%22contactInfo%5C%22%3Anull%2C%5C%22isEvent%5C%22%3Afalse%2C%5C%22reviewedByUserId%5C%22%3Anull%2C%5C%22suggestForCuratedUserIds%5C%22%3Anull%2C%5C%22suggestForCuratedUsernames%5C%22%3Anull%2C%5C%22reviewForCuratedUserId%5C%22%3Anull%2C%5C%22af%5C%22%3Afalse%2C%5C%22afDate%5C%22%3Anull%2C%5C%22suggestForAlignmentUserIds%5C%22%3Anull%2C%5C%22reviewForAlignmentUserId%5C%22%3Anull%2C%5C%22afBaseScore%5C%22%3A1%2C%5C%22afCommentCount%5C%22%3A0%2C%5C%22afLastCommentedAt%5C%22%3A%5C%222017-09-20T20%3A41%3A07.447Z%5C%22%2C%5C%22afSticky%5C%22%3Afalse%2C%5C%22voteCount%5C%22%3A41%2C%5C%22question%5C%22%3Afalse%2C%5C%22authorIsUnreviewed%5C%22%3Afalse%2C%5C%22isFuture%5C%22%3Afalse%2C%5C%22hideAuthor%5C%22%3Afalse%2C%5C%22moderationGuidelinesHtmlBody%5C%22%3Anull%2C%5C%22moderationGuidelinesContent%5C%22%3Anull%2C%5C%22moderationGuidelinesBody%5C%22%3Anull%2C%5C%22moderationStyle%5C%22%3Anull%2C%5C%22__typename%5C%22%3A%5C%22Post%5C%22%2C%5C%22lastEditedAs%5C%22%3Anull%2C%5C%22body%5C%22%3A%5C%22_LessWrong_%20is%20a%20community%20blog%20devoted%20to%20the%20art%20of%20human%20rationality.%5C%5Cn%5C%5CnIn%202009%2C%20Eliezer%20Yudkowsky%20founded%20the%20site%20and%20went%20on%20to%20write%20several%20years'%20worth%20of%20daily%20blogposts%20about%20rationality.%20They've%20been%20edited%20and%20collected%20into%20_**%5BRationality%3A%20From%20AI%20to%20Zombies%5D(https%3A%2F%2Fwww.lesswrong.com%2Frationality)**%2C_%20which%20are%20the%20intellectual%20core%20of%20the%20site.%20In%20the%20intervening%20years%2C%20the%20site%20activity%20died%20down%20quite%20a%20bit%2C%20and%20Scott%20Alexander%20founded%20his%20own%20prolific%20blog%20SlateStarCodex%2C%20whose%20writings%20have%20been%20collected%20into%20_**%5BThe%20Codex%5D(https%3A%2F%2Fwww.lesswrong.com%2Fcodex)**._%5C%5Cn%5C%5CnIn%202017%2C%20the%20LessWrong%20Team%20built%20a%20new%20backend%20and%20user%20interface%20for%20the%20site%2C%20and%20continue%20to%20work%20on%20building%20tools%20for%20making%20intellectual%20progress%20in%20the%20LessWrong%20community.%20As%20of%20launching%20in%20March%202018%2C%20the%20community%20has%20seen%20a%20resurgence%20of%20discussion%20and%20activity.%5C%5Cn%5C%5Cn*%20*%20*%5C%5Cn%5C%5CnOur%20goal%20with%20the%20frontpage%20is%20to%20have%20a%20place%20where%20you%20can%20read%20**the%20best%20content%20produced%20by%20the%20rationality%20community**%20(subject%20to%20%5Bour%20moderation%20guidelines%5D(https%3A%2F%2Fwww.lesserwrong.com%2Fposts%2FtKTcrnKn2YSdxkxKG%2Ffrontpage-posting-and-commenting-guidelines)).%20Historically%20insightful%20writing%20in%20the%20community%20can%20be%20found%20in%20the%20_Recommended%20Reading_%20and%20new%20ideas%20are%20discussed%20in%20the%20_Featured_%20and%20_Recent_%20sections.%5C%5Cn%5C%5CnYour%20user%20page%20is%20**your%20very%20own%20_LessWrong_%20blog**%2C%20where%20you%20can%20write%20about%20_whatever%20you%20want._%20We're%20interested%20to%20know%20what%20ideas%20you've%20been%20thinking%20about%20lately!%20If%20you%20write%20a%20post%20that%20seems%20like%20a%20good%20fit%20for%20the%20frontpage%2C%20and%20you're%20happy%20for%20us%20to%20do%20so%2C%20then%20the%20admins%20or%20mods%20will%20move%20your%20post%20there.%20Once%20you've%20had%20a%20bunch%20of%20posts%20promoted%20to%20the%20front%20page%2C%20you'll%20be%20able%20to%20promote%20posts%20yourself.%5C%5Cn%5C%5CnThe%20comment%20section%20is%20a%20space%20for%20you%20to%20discuss%20your%20thoughts%20on%20a%20post%2C%20and%20communicate%20the%20**true%20reasons%20for%20your%20beliefs%20and%20disagreements**.%20If%20you%20want%20a%20better%20idea%20of%20what%20posts%20and%20comments%20are%20a%20good%20fit%20for%20the%20frontpage%2C%20and%20what%20heuristics%20moderators%20use%20to%20make%20decisions%2C%20check%20out%20the%20%5BFrontpage%20Posting%20and%20Commenting%20Guidelines%5D(https%3A%2F%2Fwww.lesserwrong.com%2Fposts%2FtKTcrnKn2YSdxkxKG%2Ffrontpage-posting-and-commenting-guidelines).%5C%5Cn%5C%5Cn_If%20you%20notice%20any%20bugs%2C%20or%20want%20to%20let%20us%20know%20about%20something%20that%20could%20be%20improved%2C%20you%20can%20talk%20to%20us%20using%20**intercom**%20(the%20grey%20circular%20button%20in%20the%20bottom%20right-hand%20corner)%20or%20make%20a%20post%20in%20**%5BMeta%5D(https%3A%2F%2Fwww.lesswrong.com%2Fmeta)%20-**%20a%20section%20of%20the%20site%20for%20discussing%20the%20site._%5C%22%2C%5C%22htmlBody%5C%22%3A%5C%22%3Cp%3E%3Cem%3ELessWrong%3C%2Fem%3E%20is%20a%20community%20blog%20devoted%20to%20the%20art%20of%20human%20rationality.%3C%2Fp%3E%3Cp%3EIn%202009%2C%20Eliezer%20Yudkowsky%20founded%20the%20site%20and%20went%20on%20to%20write%20several%20years%26%23x27%3B%20worth%20of%20daily%20blogposts%20about%20rationality.%20They%26%23x27%3Bve%20been%20edited%20and%20collected%20into%20%3Cem%3E%3Cstrong%3E%3Ca%20href%3D%5C%5C%5C%22https%3A%2F%2Fwww.lesswrong.com%2Frationality%5C%5C%5C%22%3ERationality%3A%20From%20AI%20to%20Zombies%3C%2Fa%3E%3C%2Fstrong%3E%2C%20%3C%2Fem%3Ewhich%20are%20the%20intellectual%20core%20of%20the%20site.%20In%20the%20intervening%20years%2C%20the%20site%20activity%20died%20down%20quite%20a%20bit%2C%20and%20Scott%20Alexander%20founded%20his%20own%20prolific%20blog%20SlateStarCodex%2C%20whose%20writings%20have%20been%20collected%20into%20%3Cem%3E%3Cstrong%3E%3Ca%20href%3D%5C%5C%5C%22https%3A%2F%2Fwww.lesswrong.com%2Fcodex%5C%5C%5C%22%3EThe%20Codex%3C%2Fa%3E%3C%2Fstrong%3E.%20%3C%2Fem%3E%3C%2Fp%3E%3Cp%3EIn%202017%2C%20the%20LessWrong%20Team%20built%20a%20new%20backend%20and%20user%20interface%20for%20the%20site%2C%20and%20continue%20to%20work%20on%20building%20tools%20for%20making%20intellectual%20progress%20in%20the%20LessWrong%20community.%20As%20of%20launching%20in%20March%202018%2C%20the%20community%20has%20seen%20a%20resurgence%20of%20discussion%20and%20activity.%3C%2Fp%3E%3Chr%20class%3D%5C%5C%5C%22dividerBlock%5C%5C%5C%22%2F%3E%3Cp%3EOur%20goal%20with%20the%20frontpage%20is%20to%20have%20a%20place%20where%20you%20can%20read%20%3Cstrong%3Ethe%20best%20content%20produced%20by%20the%20rationality%20community%20%3C%2Fstrong%3E(subject%20to%20%3Ca%20href%3D%5C%5C%5C%22https%3A%2F%2Fwww.lesserwrong.com%2Fposts%2FtKTcrnKn2YSdxkxKG%2Ffrontpage-posting-and-commenting-guidelines%5C%5C%5C%22%3Eour%20moderation%20guidelines%3C%2Fa%3E).%20Historically%20insightful%20writing%20in%20the%20community%20can%20be%20found%20in%20the%20%3Cem%3ERecommended%20Reading%3C%2Fem%3E%20and%20new%20ideas%20are%20discussed%20in%20the%20%3Cem%3EFeatured%3C%2Fem%3E%20and%20%3Cem%3ERecent%3C%2Fem%3E%20sections.%3C%2Fp%3E%3Cp%3EYour%20user%20page%20is%20%3Cstrong%3Eyour%20very%20own%20%3Cem%3ELessWrong%3C%2Fem%3E%20blog%3C%2Fstrong%3E%2C%20where%20you%20can%20write%20about%20%3Cem%3Ewhatever%20you%20want.%20%3C%2Fem%3EWe%26%23x27%3Bre%20interested%20to%20know%20what%20ideas%20you%26%23x27%3Bve%20been%20thinking%20about%20lately!%20If%20you%20write%20a%20post%20that%20seems%20like%20a%20good%20fit%20for%20the%20frontpage%2C%20and%20you%26%23x27%3Bre%20happy%20for%20us%20to%20do%20so%2C%20then%20the%20admins%20or%20mods%20will%20move%20your%20post%20there.%20Once%20you%26%23x27%3Bve%20had%20a%20bunch%20of%20posts%20promoted%20to%20the%20front%20page%2C%20you%26%23x27%3Bll%20be%20able%20to%20promote%20posts%20yourself.%3C%2Fp%3E%3Cp%3EThe%20comment%20section%20is%20a%20space%20for%20you%20to%20discuss%20your%20thoughts%20on%20a%20post%2C%20and%20communicate%20the%20%3Cstrong%3Etrue%20reasons%20for%20your%20beliefs%20and%20disagreements%3C%2Fstrong%3E.%20If%20you%20want%20a%20better%20idea%20of%20what%20posts%20and%20comments%20are%20a%20good%20fit%20for%20the%20frontpage%2C%20and%20what%20heuristics%20moderators%20use%20to%20make%20decisions%2C%20check%20out%20the%20%3Ca%20href%3D%5C%5C%5C%22https%3A%2F%2Fwww.lesserwrong.com%2Fposts%2FtKTcrnKn2YSdxkxKG%2Ffrontpage-posting-and-commenting-guidelines%5C%5C%5C%22%3EFrontpage%20Posting%20and%20Commenting%20Guidelines%3C%2Fa%3E.%3C%2Fp%3E%3Cp%3E%3Cem%3EIf%20you%20notice%20any%20bugs%2C%20or%20want%20to%20let%20us%20know%20about%20something%20that%20could%20be%20improved%2C%20you%20can%20talk%20to%20us%20using%20%3Cstrong%3Eintercom%3C%2Fstrong%3E%20(the%20grey%20circular%20button%20in%20the%20bottom%20right-hand%20corner)%20or%20make%20a%20post%20in%20%3Cstrong%3E%3Ca%20href%3D%5C%5C%5C%22https%3A%2F%2Fwww.lesswrong.com%2Fmeta%5C%5C%5C%22%3EMeta%3C%2Fa%3E%20-%3C%2Fstrong%3E%20a%20section%20of%20the%20site%20for%20discussing%20the%20site.%3C%2Fem%3E%3C%2Fp%3E%3Cp%3E%3C%2Fp%3E%5C%22%2C%5C%22tableOfContents%5C%22%3Anull%2C%5C%22content%5C%22%3A%7B%5C%22type%5C%22%3A%5C%22json%5C%22%2C%5C%22json%5C%22%3A%7B%5C%22blocks%5C%22%3A%5B%7B%5C%22data%5C%22%3A%7B%7D%2C%5C%22depth%5C%22%3A0%2C%5C%22entityRanges%5C%22%3A%5B%5D%2C%5C%22inlineStyleRanges%5C%22%3A%5B%7B%5C%22length%5C%22%3A9%2C%5C%22offset%5C%22%3A0%2C%5C%22style%5C%22%3A%5C%22ITALIC%5C%22%7D%5D%2C%5C%22key%5C%22%3A%5C%225rq6s%5C%22%2C%5C%22text%5C%22%3A%5C%22LessWrong%20is%20a%20community%20blog%20devoted%20to%20the%20art%20of%20human%20rationality.%5C%22%2C%5C%22type%5C%22%3A%5C%22unstyled%5C%22%7D%2C%7B%5C%22data%5C%22%3A%7B%7D%2C%5C%22depth%5C%22%3A0%2C%5C%22entityRanges%5C%22%3A%5B%7B%5C%22key%5C%22%3A0%2C%5C%22length%5C%22%3A31%2C%5C%22offset%5C%22%3A163%7D%2C%7B%5C%22key%5C%22%3A1%2C%5C%22length%5C%22%3A9%2C%5C%22offset%5C%22%3A414%7D%5D%2C%5C%22inlineStyleRanges%5C%22%3A%5B%7B%5C%22length%5C%22%3A33%2C%5C%22offset%5C%22%3A163%2C%5C%22style%5C%22%3A%5C%22ITALIC%5C%22%7D%2C%7B%5C%22length%5C%22%3A11%2C%5C%22offset%5C%22%3A414%2C%5C%22style%5C%22%3A%5C%22ITALIC%5C%22%7D%2C%7B%5C%22length%5C%22%3A31%2C%5C%22offset%5C%22%3A163%2C%5C%22style%5C%22%3A%5C%22BOLD%5C%22%7D%2C%7B%5C%22length%5C%22%3A9%2C%5C%22offset%5C%22%3A414%2C%5C%22style%5C%22%3A%5C%22BOLD%5C%22%7D%5D%2C%5C%22key%5C%22%3A%5C%222vnnj%5C%22%2C%5C%22text%5C%22%3A%5C%22In%202009%2C%20Eliezer%20Yudkowsky%20founded%20the%20site%20and%20went%20on%20to%20write%20several%20years'%20worth%20of%20daily%20blogposts%20about%20rationality.%20They've%20been%20edited%20and%20collected%20into%20Rationality%3A%20From%20AI%20to%20Zombies%2C%20which%20are%20the%20intellectual%20core%20of%20the%20site.%20In%20the%20intervening%20years%2C%20the%20site%20activity%20died%20down%20quite%20a%20bit%2C%20and%20Scott%20Alexander%20founded%20his%20own%20prolific%20blog%20SlateStarCodex%2C%20whose%20writings%20have%20been%20collected%20into%20The%20Codex.%20%5C%22%2C%5C%22type%5C%22%3A%5C%22unstyled%5C%22%7D%2C%7B%5C%22data%5C%22%3A%7B%7D%2C%5C%22depth%5C%22%3A0%2C%5C%22entityRanges%5C%22%3A%5B%5D%2C%5C%22inlineStyleRanges%5C%22%3A%5B%5D%2C%5C%22key%5C%22%3A%5C%22bhbeg%5C%22%2C%5C%22text%5C%22%3A%5C%22In%202017%2C%20the%20LessWrong%20Team%20built%20a%20new%20backend%20and%20user%20interface%20for%20the%20site%2C%20and%20continue%20to%20work%20on%20building%20tools%20for%20making%20intellectual%20progress%20in%20the%20LessWrong%20community.%20As%20of%20launching%20in%20March%202018%2C%20the%20community%20has%20seen%20a%20resurgence%20of%20discussion%20and%20activity.%5C%22%2C%5C%22type%5C%22%3A%5C%22unstyled%5C%22%7D%2C%7B%5C%22data%5C%22%3A%7B%7D%2C%5C%22depth%5C%22%3A0%2C%5C%22entityRanges%5C%22%3A%5B%5D%2C%5C%22inlineStyleRanges%5C%22%3A%5B%5D%2C%5C%22key%5C%22%3A%5C%229vcrp%5C%22%2C%5C%22text%5C%22%3A%5C%22%5C%22%2C%5C%22type%5C%22%3A%5C%22divider%5C%22%7D%2C%7B%5C%22data%5C%22%3A%7B%7D%2C%5C%22depth%5C%22%3A0%2C%5C%22entityRanges%5C%22%3A%5B%7B%5C%22key%5C%22%3A2%2C%5C%22length%5C%22%3A25%2C%5C%22offset%5C%22%3A133%7D%5D%2C%5C%22inlineStyleRanges%5C%22%3A%5B%7B%5C%22length%5C%22%3A55%2C%5C%22offset%5C%22%3A66%2C%5C%22style%5C%22%3A%5C%22BOLD%5C%22%7D%2C%7B%5C%22length%5C%22%3A19%2C%5C%22offset%5C%22%3A230%2C%5C%22style%5C%22%3A%5C%22ITALIC%5C%22%7D%2C%7B%5C%22length%5C%22%3A8%2C%5C%22offset%5C%22%3A285%2C%5C%22style%5C%22%3A%5C%22ITALIC%5C%22%7D%2C%7B%5C%22length%5C%22%3A6%2C%5C%22offset%5C%22%3A298%2C%5C%22style%5C%22%3A%5C%22ITALIC%5C%22%7D%5D%2C%5C%22key%5C%22%3A%5C%225u7ur%5C%22%2C%5C%22text%5C%22%3A%5C%22Our%20goal%20with%20the%20frontpage%20is%20to%20have%20a%20place%20where%20you%20can%20read%20the%20best%20content%20produced%20by%20the%20rationality%20community%20(subject%20to%20our%20moderation%20guidelines).%20Historically%20insightful%20writing%20in%20the%20community%20can%20be%20found%20in%20the%20Recommended%20Reading%20and%20new%20ideas%20are%20discussed%20in%20the%20Featured%20and%20Recent%20sections.%5C%22%2C%5C%22type%5C%22%3A%5C%22unstyled%5C%22%7D%2C%7B%5C%22data%5C%22%3A%7B%7D%2C%5C%22depth%5C%22%3A0%2C%5C%22entityRanges%5C%22%3A%5B%5D%2C%5C%22inlineStyleRanges%5C%22%3A%5B%7B%5C%22length%5C%22%3A28%2C%5C%22offset%5C%22%3A18%2C%5C%22style%5C%22%3A%5C%22BOLD%5C%22%7D%2C%7B%5C%22length%5C%22%3A9%2C%5C%22offset%5C%22%3A32%2C%5C%22style%5C%22%3A%5C%22ITALIC%5C%22%7D%2C%7B%5C%22length%5C%22%3A19%2C%5C%22offset%5C%22%3A74%2C%5C%22style%5C%22%3A%5C%22ITALIC%5C%22%7D%5D%2C%5C%22key%5C%22%3A%5C%2260dj4%5C%22%2C%5C%22text%5C%22%3A%5C%22Your%20user%20page%20is%20your%20very%20own%20LessWrong%20blog%2C%20where%20you%20can%20write%20about%20whatever%20you%20want.%20We're%20interested%20to%20know%20what%20ideas%20you've%20been%20thinking%20about%20lately!%20If%20you%20write%20a%20post%20that%20seems%20like%20a%20good%20fit%20for%20the%20frontpage%2C%20and%20you're%20happy%20for%20us%20to%20do%20so%2C%20then%20the%20admins%20or%20mods%20will%20move%20your%20post%20there.%20Once%20you've%20had%20a%20bunch%20of%20posts%20promoted%20to%20the%20front%20page%2C%20you'll%20be%20able%20to%20promote%20posts%20yourself.%5C%22%2C%5C%22type%5C%22%3A%5C%22unstyled%5C%22%7D%2C%7B%5C%22data%5C%22%3A%7B%7D%2C%5C%22depth%5C%22%3A0%2C%5C%22entityRanges%5C%22%3A%5B%7B%5C%22key%5C%22%3A3%2C%5C%22length%5C%22%3A43%2C%5C%22offset%5C%22%3A299%7D%5D%2C%5C%22inlineStyleRanges%5C%22%3A%5B%7B%5C%22length%5C%22%3A47%2C%5C%22offset%5C%22%3A95%2C%5C%22style%5C%22%3A%5C%22BOLD%5C%22%7D%5D%2C%5C%22key%5C%22%3A%5C%225dkba%5C%22%2C%5C%22text%5C%22%3A%5C%22The%20comment%20section%20is%20a%20space%20for%20you%20to%20discuss%20your%20thoughts%20on%20a%20post%2C%20and%20communicate%20the%20true%20reasons%20for%20your%20beliefs%20and%20disagreements.%20If%20you%20want%20a%20better%20idea%20of%20what%20posts%20and%20comments%20are%20a%20good%20fit%20for%20the%20frontpage%2C%20and%20what%20heuristics%20moderators%20use%20to%20make%20decisions%2C%20check%20out%20the%20Frontpage%20Posting%20and%20Commenting%20Guidelines.%5C%22%2C%5C%22type%5C%22%3A%5C%22unstyled%5C%22%7D%2C%7B%5C%22data%5C%22%3A%7B%7D%2C%5C%22depth%5C%22%3A0%2C%5C%22entityRanges%5C%22%3A%5B%7B%5C%22key%5C%22%3A4%2C%5C%22length%5C%22%3A4%2C%5C%22offset%5C%22%3A198%7D%5D%2C%5C%22inlineStyleRanges%5C%22%3A%5B%7B%5C%22length%5C%22%3A251%2C%5C%22offset%5C%22%3A0%2C%5C%22style%5C%22%3A%5C%22ITALIC%5C%22%7D%2C%7B%5C%22length%5C%22%3A8%2C%5C%22offset%5C%22%3A112%2C%5C%22style%5C%22%3A%5C%22BOLD%5C%22%7D%2C%7B%5C%22length%5C%22%3A6%2C%5C%22offset%5C%22%3A198%2C%5C%22style%5C%22%3A%5C%22BOLD%5C%22%7D%5D%2C%5C%22key%5C%22%3A%5C%22dpa5q%5C%22%2C%5C%22text%5C%22%3A%5C%22If%20you%20notice%20any%20bugs%2C%20or%20want%20to%20let%20us%20know%20about%20something%20that%20could%20be%20improved%2C%20you%20can%20talk%20to%20us%20using%20intercom%20(the%20grey%20circular%20button%20in%20the%20bottom%20right-hand%20corner)%20or%20make%20a%20post%20in%20Meta%20-%20a%20section%20of%20the%20site%20for%20discussing%20the%20site.%5C%22%2C%5C%22type%5C%22%3A%5C%22unstyled%5C%22%7D%2C%7B%5C%22data%5C%22%3A%7B%7D%2C%5C%22depth%5C%22%3A0%2C%5C%22entityRanges%5C%22%3A%5B%5D%2C%5C%22inlineStyleRanges%5C%22%3A%5B%5D%2C%5C%22key%5C%22%3A%5C%228jp9k%5C%22%2C%5C%22text%5C%22%3A%5C%22%5C%22%2C%5C%22type%5C%22%3A%5C%22unstyled%5C%22%7D%5D%2C%5C%22entityMap%5C%22%3A%7B%5C%220%5C%22%3A%7B%5C%22data%5C%22%3A%7B%5C%22url%5C%22%3A%5C%22https%3A%2F%2Fwww.lesswrong.com%2Frationality%5C%22%7D%2C%5C%22mutability%5C%22%3A%5C%22MUTABLE%5C%22%2C%5C%22type%5C%22%3A%5C%22LINK%5C%22%7D%2C%5C%221%5C%22%3A%7B%5C%22data%5C%22%3A%7B%5C%22url%5C%22%3A%5C%22https%3A%2F%2Fwww.lesswrong.com%2Fcodex%5C%22%7D%2C%5C%22mutability%5C%22%3A%5C%22MUTABLE%5C%22%2C%5C%22type%5C%22%3A%5C%22LINK%5C%22%7D%2C%5C%222%5C%22%3A%7B%5C%22data%5C%22%3A%7B%5C%22url%5C%22%3A%5C%22https%3A%2F%2Fwww.lesserwrong.com%2Fposts%2FtKTcrnKn2YSdxkxKG%2Ffrontpage-posting-and-commenting-guidelines%5C%22%7D%2C%5C%22mutability%5C%22%3A%5C%22MUTABLE%5C%22%2C%5C%22type%5C%22%3A%5C%22LINK%5C%22%7D%2C%5C%223%5C%22%3A%7B%5C%22data%5C%22%3A%7B%5C%22url%5C%22%3A%5C%22https%3A%2F%2Fwww.lesserwrong.com%2Fposts%2FtKTcrnKn2YSdxkxKG%2Ffrontpage-posting-and-commenting-guidelines%5C%22%7D%2C%5C%22mutability%5C%22%3A%5C%22MUTABLE%5C%22%2C%5C%22type%5C%22%3A%5C%22LINK%5C%22%7D%2C%5C%224%5C%22%3A%7B%5C%22data%5C%22%3A%7B%5C%22url%5C%22%3A%5C%22https%3A%2F%2Fwww.lesswrong.com%2Fmeta%5C%22%7D%2C%5C%22mutability%5C%22%3A%5C%22MUTABLE%5C%22%2C%5C%22type%5C%22%3A%5C%22LINK%5C%22%7D%7D%7D%7D%2C%5C%22plaintextExcerpt%5C%22%3A%5C%22LessWrong%20is%20a%20community%20blog%20devoted%20to%20the%20art%20of%20human%20rationality.%5C%5Cn%5C%5CnIn%202009%2C%20Eliezer%20Yudkowsky%20founded%20the%20site%20and%20went%20on%20to%20write%20several%20years'%5C%5Cnworth%20of%20daily%20blogposts%20about%20rationality.%20They've%20been%20edited%20and%20collected%5C%5Cninto%20_**...%20(Read%20More)%5C%22%2C%5C%22commentSortOrder%5C%22%3Anull%2C%5C%22canonicalPrevPostSlug%5C%22%3Anull%2C%5C%22canonicalNextPostSlug%5C%22%3Anull%2C%5C%22canonicalSequenceId%5C%22%3Anull%2C%5C%22canonicalBookId%5C%22%3Anull%2C%5C%22bannedUserIds%5C%22%3Anull%2C%5C%22canonicalSequence%5C%22%3Anull%2C%5C%22canonicalBook%5C%22%3Anull%2C%5C%22canonicalCollection%5C%22%3Anull%2C%5C%22collectionTitle%5C%22%3Anull%2C%5C%22types%5C%22%3Anull%2C%5C%22showModerationGuidelines%5C%22%3Afalse%7D%2C%5C%22UserEQNTWXLKMeWMp2FQS%5C%22%3A%7B%5C%22_id%5C%22%3A%5C%22EQNTWXLKMeWMp2FQS%5C%22%2C%5C%22slug%5C%22%3A%5C%22benito%5C%22%2C%5C%22username%5C%22%3A%5C%22Benito%5C%22%2C%5C%22displayName%5C%22%3A%5C%22Ben%20Pace%5C%22%2C%5C%22fullName%5C%22%3A%5C%22Ben%20Pace%5C%22%2C%5C%22emailHash%5C%22%3Anull%2C%5C%22karma%5C%22%3A9032%2C%5C%22afKarma%5C%22%3A3%2C%5C%22deleted%5C%22%3Afalse%2C%5C%22__typename%5C%22%3A%5C%22User%5C%22%2C%5C%22moderationGuidelinesHtmlBody%5C%22%3A%5C%22%3Cp%3EI'd%20like%20to%20encourage%20you%20to%20not%20feel%20bad%20%3Cem%3Enot%20responding%3C%2Fem%3E%20to%20a%20comment%20if%20you%20don't%20have%20the%20time%2Benergy%20to%20really%20take%20on%20their%20worldview%20and%20try%20to%20respond%20as%20accurately%20as%20you%20can%20to%20where%20they're%20coming%20from%20-%20if%20it's%20too%20much%20effort%20for%20you%20right%20now%20to%20try%20to%20really%20pass%20someone's%20intellectual%20turing%20test%2C%20then%20it's%20okay%20to%20not%20fake%20it.%3C%2Fp%3E%5C%5Cn%3Cp%3EAnother%20way%20of%20putting%20this%3A%20if%20someone%20disagrees%20with%20you%2C%20you%20don't%20need%20to%20take%20it%20as%20a%20challenge%20to%20your%20position.%20If%20you%20think%20that%20disagreeing%20with%20them%20further%20would%20help%20clarify%20either%20your%20or%20their%20opinions%2C%20by%20all%20means%2C%20but%20leaving%20it%20as-is%20is%20often%20a%20perfectly%20fine%20thing%20to%20do.%3C%2Fp%3E%5C%5Cn%5C%22%2C%5C%22moderationGuidelinesContent%5C%22%3Anull%2C%5C%22moderationGuidelinesBody%5C%22%3Anull%2C%5C%22moderationStyle%5C%22%3A%5C%22norm-enforcing%5C%22%2C%5C%22groups%5C%22%3A%7B%5C%22type%5C%22%3A%5C%22json%5C%22%2C%5C%22json%5C%22%3A%5B%5C%22alignmentForum%5C%22%2C%5C%22alignmentForumAdmins%5C%22%2C%5C%22sunshineRegiment%5C%22%2C%5C%22trustLevel1%5C%22%2C%5C%22canCommentLock%5C%22%2C%5C%22canModeratePersonal%5C%22%2C%5C%22alignmentVoters%5C%22%5D%7D%2C%5C%22bannedUserIds%5C%22%3Anull%2C%5C%22moderatorAssistance%5C%22%3Atrue%7D%2C%5C%22UserXtphY3uYHwruKqDyG%5C%22%3A%7B%5C%22_id%5C%22%3A%5C%22XtphY3uYHwruKqDyG%5C%22%2C%5C%22slug%5C%22%3A%5C%22habryka4%5C%22%2C%5C%22username%5C%22%3A%5C%22habryka4%5C%22%2C%5C%22displayName%5C%22%3A%5C%22habryka%5C%22%2C%5C%22fullName%5C%22%3A%5C%22Oliver%20Habryka%5C%22%2C%5C%22emailHash%5C%22%3Anull%2C%5C%22karma%5C%22%3A7767%2C%5C%22afKarma%5C%22%3A42%2C%5C%22deleted%5C%22%3Anull%2C%5C%22__typename%5C%22%3A%5C%22User%5C%22%7D%2C%5C%22Userr38pkCm7wF4M44MDQ%5C%22%3A%7B%5C%22_id%5C%22%3A%5C%22r38pkCm7wF4M44MDQ%5C%22%2C%5C%22slug%5C%22%3A%5C%22raemon%5C%22%2C%5C%22username%5C%22%3A%5C%22Raemon%5C%22%2C%5C%22displayName%5C%22%3A%5C%22Raemon%5C%22%2C%5C%22fullName%5C%22%3A%5C%22Raymond%20Arnold%5C%22%2C%5C%22emailHash%5C%22%3Anull%2C%5C%22karma%5C%22%3A23356%2C%5C%22afKarma%5C%22%3A4%2C%5C%22deleted%5C%22%3Afalse%2C%5C%22__typename%5C%22%3A%5C%22User%5C%22%7D%2C%5C%22UsernLbwLhBaQeG6tCNDN%5C%22%3A%7B%5C%22_id%5C%22%3A%5C%22nLbwLhBaQeG6tCNDN%5C%22%2C%5C%22slug%5C%22%3A%5C%22jimrandomh%5C%22%2C%5C%22username%5C%22%3A%5C%22jimrandomh%5C%22%2C%5C%22displayName%5C%22%3A%5C%22jimrandomh%5C%22%2C%5C%22fullName%5C%22%3A%5C%22Jim%20Babcock%5C%22%2C%5C%22emailHash%5C%22%3Anull%2C%5C%22karma%5C%22%3A13767%2C%5C%22afKarma%5C%22%3A0%2C%5C%22deleted%5C%22%3Afalse%2C%5C%22__typename%5C%22%3A%5C%22User%5C%22%7D%2C%5C%22UserfD4ATtTkdQJ4aSpGH%5C%22%3A%7B%5C%22_id%5C%22%3A%5C%22fD4ATtTkdQJ4aSpGH%5C%22%2C%5C%22slug%5C%22%3A%5C%22vaniver%5C%22%2C%5C%22username%5C%22%3A%5C%22Vaniver%5C%22%2C%5C%22displayName%5C%22%3A%5C%22Vaniver%5C%22%2C%5C%22fullName%5C%22%3Anull%2C%5C%22emailHash%5C%22%3Anull%2C%5C%22karma%5C%22%3A26870%2C%5C%22afKarma%5C%22%3A7%2C%5C%22deleted%5C%22%3Afalse%2C%5C%22__typename%5C%22%3A%5C%22User%5C%22%7D%2C%5C%22%24ROOT_QUERY.post(%7B%5C%5C%5C%22input%5C%5C%5C%22%3A%7B%5C%5C%5C%22selector%5C%5C%5C%22%3A%7B%5C%5C%5C%22documentId%5C%5C%5C%22%3A%5C%5C%5C%22ANDbEKqbdDuBCQAnM%5C%5C%5C%22%7D%2C%5C%5C%5C%22enableCache%5C%5C%5C%22%3Atrue%7D%7D)%5C%22%3A%7B%5C%22result%5C%22%3A%7B%5C%22type%5C%22%3A%5C%22id%5C%22%2C%5C%22id%5C%22%3A%5C%22PostANDbEKqbdDuBCQAnM%5C%22%2C%5C%22generated%5C%22%3Afalse%7D%2C%5C%22__typename%5C%22%3A%5C%22SinglePostOutput%5C%22%7D%7D%2C%5C%22optimistic%5C%22%3A%5B%5D%2C%5C%22reducerError%5C%22%3Anull%7D%7D%22%2C%22utcOffset%22%3A0%7D
+        </script>
+        <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/packages/vulcan_forms/lib/stylesheets/style.scss.css?hash=f716b4d769ab09e764b530ee67f9805895cd2b5a" />
+        <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/packages/vulcan_forms/lib/stylesheets/datetime.scss.css?hash=b016fd5b55fbbc7c7104cdfc80a1d756d4f1d515" />
+        <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/packages/vulcan_admin/lib/stylesheets/style.scss.css?hash=565b7bfdf7141bdf018c2274f4e0f64f37663e9f" />
+        <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/packages/vulcan_embed/lib/stylesheets/embedly.scss.css?hash=befe7d83d858ba91ed003d50451a56660c565d51" />
+        <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/packages/lesswrong/styles/main.scss.css?hash=2ce5fa68f36da4b7304721bd4f96524f230fde6b" />
+    </head>
+    <body>
+        <div id="react-app">
+            <div class="locale-en">
+                <div></div>
+                <div class="wrapper" id="wrapper">
+                    <div>
+                        <div id="intercome-outer-frame"></div>
+                        <noscript class="noscript-warning"> This website requires javascript to properly function. Consider activating javascript to get access to all site functionality. </noscript>
+                        <div class="Header-root">
+                            <div class="headroom-wrapper">
+                                <div class="headroom headroom--unfixed">
+                                    <header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorDefault Header-appBar">
+                                        <div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters">
+                                            <button tabindex="0" class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit Header-menuButton" type="button" aria-label="Menu">
+                                                <span class="MuiIconButton-label"
+                                                    ><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span
+                                                ><span class="MuiTouchRipple-root"></span>
+                                            </button>
+                                            <h2 class="MuiTypography-root MuiTypography-title MuiTypography-colorTextSecondary Header-title">
+                                                <div class="jss108"><a class="Header-titleLink" href="/">LESSWRONG</a></div>
+                                                <div class="jss110"><a class="Header-titleLink" href="/">LW</a></div>
+                                            </h2>
+                                            <div class="Header-rightHeaderItems">
+                                                <span></span>
+                                                <div class="users-menu">
+                                                    <button tabindex="0" class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat" type="button">
+                                                        <span class="MuiButton-label"><span class="UsersAccountMenu-userButton" style="color:rgba(0, 0, 0, 0.87)">Login</span></span
+                                                        ><span class="MuiTouchRipple-root"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Layout-searchResultsArea"></div>
+                        <div class="Layout-main">
+                            <div class="flash-messages"></div>
+                            <div class="PostsPage-root">
+                                <div></div>
+                                <div class="Section-root">
+                                    <div class="MuiGrid-container Section-section">
+                                        <div class="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3 Section-sectionTitleContainer"></div>
+                                        <div class="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-9">
+                                            <div class="Section-sectionContent">
+                                                <div class="PostsPage-post">
+                                                    <div class="PostsPage-header">
+                                                        <div class="PostsPage-headerLeft">
+                                                            <div><h1 class="MuiTypography-root MuiTypography-display3 PostsPageTitle-root">About: LessWrong</h1></div>
+                                                            <div class="PostsPage-secondaryInfo">
+                                                                <span class="PostsPage-inline"
+                                                                    ><span class="MuiTypography-root MuiTypography-body1 PostsAuthors-root"
+                                                                        >by<span class="PostsAuthors-authorName"
+                                                                            ><a href="/users/benito">Ben Pace</a><span>, <a href="/users/habryka4">habryka</a></span
+                                                                            ><span>, <a href="/users/raemon">Raemon</a></span
+                                                                            ><span>, <a href="/users/jimrandomh">jimrandomh</a></span
+                                                                            ><span>, <a href="/users/vaniver">Vaniver</a></span></span
+                                                                        ></span
+                                                                    ></span
+                                                                ><span class="PostsPage-mobileDate"><span>1y</span></span
+                                                                ><span class="PostsPage-desktopDate"><span>20th Sep 2017</span></span
+                                                                ><a class="PostsPage-commentsLink" href="#comments">20 comments</a><span class="PostsPage-actions"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="PostsPage-headerVote">
+                                                            <div class="PostsVote-voteBlock">
+                                                                <div class="PostsVote-upvote" title="Click-and-hold for strong vote">
+                                                                    <button tabindex="0" class="MuiButtonBase-root MuiIconButton-root VoteButton-root VoteButton-up" type="button">
+                                                                        <span class="MuiIconButton-label"
+                                                                            ><svg
+                                                                                class="MuiSvgIcon-root VoteButton-smallArrow"
+                                                                                focusable="false"
+                                                                                viewBox="6 6 12 12"
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                            >
+                                                                                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                                                                                <path fill="none" d="M0 0h24v24H0z"></path></svg
+                                                                            ><svg
+                                                                                class="MuiSvgIcon-root VoteButton-bigArrow"
+                                                                                focusable="false"
+                                                                                viewBox="6 6 12 12"
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                                style="color:"
+                                                                            >
+                                                                                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                                                                                <path fill="none" d="M0 0h24v24H0z"></path></svg
+                                                                        ></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="PostsVote-voteScores">
+                                                                    <h1 class="MuiTypography-root MuiTypography-headline PostsVote-voteScore" title="41 Votes">54</h1>
+                                                                </div>
+                                                                <div class="PostsVote-downvote" title="Click-and-hold for strong vote">
+                                                                    <button tabindex="0" class="MuiButtonBase-root MuiIconButton-root VoteButton-root VoteButton-down" type="button">
+                                                                        <span class="MuiIconButton-label"
+                                                                            ><svg
+                                                                                class="MuiSvgIcon-root VoteButton-smallArrow"
+                                                                                focusable="false"
+                                                                                viewBox="6 6 12 12"
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                            >
+                                                                                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                                                                                <path fill="none" d="M0 0h24v24H0z"></path></svg
+                                                                            ><svg
+                                                                                class="MuiSvgIcon-root VoteButton-bigArrow"
+                                                                                focusable="false"
+                                                                                viewBox="6 6 12 12"
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                                style="color:"
+                                                                            >
+                                                                                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                                                                                <path fill="none" d="M0 0h24v24H0z"></path></svg
+                                                                        ></span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="PostsPage-divider" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Section-root">
+                                    <div class="MuiGrid-container Section-section">
+                                        <div class="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-3 Section-sectionTitleContainer">
+                                            <div class="Section-sectionTitleBottom"><div></div></div>
+                                        </div>
+                                        <div class="MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-9">
+                                            <div class="Section-sectionContent">
+                                                <div class="PostsPage-post">
+                                                    <div class="PostsPage-postBody">
+                                                        <div class="PostsPage-postContent">
+                                                            <div>
+                                                                <p><em>LessWrong</em> is a community blog devoted to the art of human rationality.</p>
+                                                                <p>
+                                                                    In 2009, Eliezer Yudkowsky founded the site and went on to write several years&#x27; worth of daily blogposts about rationality.
+                                                                    They&#x27;ve been edited and collected into
+                                                                    <em
+                                                                        ><strong><a href="https://www.lesswrong.com/rationality">Rationality: From AI to Zombies</a></strong
+                                                                        >, </em
+                                                                    >which are the intellectual core of the site. In the intervening years, the site activity died down quite a bit, and Scott Alexander
+                                                                    founded his own prolific blog SlateStarCodex, whose writings have been collected into
+                                                                    <em
+                                                                        ><strong><a href="https://www.lesswrong.com/codex">The Codex</a></strong
+                                                                        >.
+                                                                    </em>
+                                                                </p>
+                                                                <p>
+                                                                    In 2017, the LessWrong Team built a new backend and user interface for the site, and continue to work on building tools for making
+                                                                    intellectual progress in the LessWrong community. As of launching in March 2018, the community has seen a resurgence of discussion
+                                                                    and activity.
+                                                                </p>
+                                                                <hr class="dividerBlock" />
+                                                                <p>
+                                                                    Our goal with the frontpage is to have a place where you can read
+                                                                    <strong>the best content produced by the rationality community </strong>(subject to
+                                                                    <a href="https://www.lesserwrong.com/posts/tKTcrnKn2YSdxkxKG/frontpage-posting-and-commenting-guidelines"
+                                                                        >our moderation guidelines</a
+                                                                    >). Historically insightful writing in the community can be found in the <em>Recommended Reading</em> and new ideas are discussed in
+                                                                    the <em>Featured</em> and <em>Recent</em> sections.
+                                                                </p>
+                                                                <p>
+                                                                    Your user page is <strong>your very own <em>LessWrong</em> blog</strong>, where you can write about
+                                                                    <em>whatever you want. </em>We&#x27;re interested to know what ideas you&#x27;ve been thinking about lately! If you write a post
+                                                                    that seems like a good fit for the frontpage, and you&#x27;re happy for us to do so, then the admins or mods will move your post
+                                                                    there. Once you&#x27;ve had a bunch of posts promoted to the front page, you&#x27;ll be able to promote posts yourself.
+                                                                </p>
+                                                                <p>
+                                                                    The comment section is a space for you to discuss your thoughts on a post, and communicate the
+                                                                    <strong>true reasons for your beliefs and disagreements</strong>. If you want a better idea of what posts and comments are a good
+                                                                    fit for the frontpage, and what heuristics moderators use to make decisions, check out the
+                                                                    <a href="https://www.lesserwrong.com/posts/tKTcrnKn2YSdxkxKG/frontpage-posting-and-commenting-guidelines"
+                                                                        >Frontpage Posting and Commenting Guidelines</a
+                                                                    >.
+                                                                </p>
+                                                                <p>
+                                                                    <em
+                                                                        >If you notice any bugs, or want to let us know about something that could be improved, you can talk to us using
+                                                                        <strong>intercom</strong> (the grey circular button in the bottom right-hand corner) or make a post in
+                                                                        <strong><a href="https://www.lesswrong.com/meta">Meta</a> -</strong> a section of the site for discussing the site.</em
+                                                                    >
+                                                                </p>
+                                                                <p></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="PostsPage-footerSection">
+                                                    <div class="PostsPage-voteBottom">
+                                                        <div class="PostsVote-voteBlock">
+                                                            <div class="PostsVote-upvote" title="Click-and-hold for strong vote">
+                                                                <button tabindex="0" class="MuiButtonBase-root MuiIconButton-root VoteButton-root VoteButton-up" type="button">
+                                                                    <span class="MuiIconButton-label"
+                                                                        ><svg
+                                                                            class="MuiSvgIcon-root VoteButton-smallArrow"
+                                                                            focusable="false"
+                                                                            viewBox="6 6 12 12"
+                                                                            aria-hidden="true"
+                                                                            role="presentation"
+                                                                        >
+                                                                            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                                                                            <path fill="none" d="M0 0h24v24H0z"></path></svg
+                                                                        ><svg
+                                                                            class="MuiSvgIcon-root VoteButton-bigArrow"
+                                                                            focusable="false"
+                                                                            viewBox="6 6 12 12"
+                                                                            aria-hidden="true"
+                                                                            role="presentation"
+                                                                            style="color:"
+                                                                        >
+                                                                            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                                                                            <path fill="none" d="M0 0h24v24H0z"></path></svg
+                                                                    ></span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="PostsVote-voteScores"><h1 class="MuiTypography-root MuiTypography-headline PostsVote-voteScore" title="41 Votes">54</h1></div>
+                                                            <div class="PostsVote-downvote" title="Click-and-hold for strong vote">
+                                                                <button tabindex="0" class="MuiButtonBase-root MuiIconButton-root VoteButton-root VoteButton-down" type="button">
+                                                                    <span class="MuiIconButton-label"
+                                                                        ><svg
+                                                                            class="MuiSvgIcon-root VoteButton-smallArrow"
+                                                                            focusable="false"
+                                                                            viewBox="6 6 12 12"
+                                                                            aria-hidden="true"
+                                                                            role="presentation"
+                                                                        >
+                                                                            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                                                                            <path fill="none" d="M0 0h24v24H0z"></path></svg
+                                                                        ><svg
+                                                                            class="MuiSvgIcon-root VoteButton-bigArrow"
+                                                                            focusable="false"
+                                                                            viewBox="6 6 12 12"
+                                                                            aria-hidden="true"
+                                                                            role="presentation"
+                                                                            style="color:"
+                                                                        >
+                                                                            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                                                                            <path fill="none" d="M0 0h24v24H0z"></path></svg
+                                                                    ></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="PostsPage-commentsSection">
+                                                    <div class="spinner undefined">
+                                                        <div class="bounce1"></div>
+                                                        <div class="bounce2"></div>
+                                                        <div class="bounce3"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Footer-root"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            __meteor_runtime_config__ = JSON.parse(
+                decodeURIComponent(
+                    "%7B%22meteorRelease%22%3A%22METEOR%401.8.1-beta.0%22%2C%22meteorEnv%22%3A%7B%22NODE_ENV%22%3A%22production%22%2C%22TEST_METADATA%22%3A%22%7B%7D%22%7D%2C%22PUBLIC_SETTINGS%22%3A%7B%22title%22%3A%22LessWrong%22%2C%22tagline%22%3A%22A%20community%20blog%20devoted%20to%20refining%20the%20art%20of%20rationality%22%2C%22logoUrl%22%3A%22https%3A%2F%2Fres.cloudinary.com%2Flesswrong-2-0%2Fimage%2Fupload%2Fv1498011194%2FLessWrong_Logo_skglnw.svg%22%2C%22logoHeight%22%3A%2250%22%2C%22logoWidth%22%3A%22200%22%2C%22faviconUrl%22%3A%22https%3A%2F%2Fres.cloudinary.com%2Flesswrong-2-0%2Fimage%2Fupload%2Fv1497915096%2Ffavicon_lncumn.ico%22%2C%22requirePostsApproval%22%3Afalse%2C%22requireViewInvite%22%3Afalse%2C%22requirePostInvite%22%3Afalse%2C%22autoSubscribe%22%3Afalse%2C%22emailNotifications%22%3Atrue%2C%22postInterval%22%3A20%2C%22RSSLinksPointTo%22%3A%22post%22%2C%22commentInterval%22%3A20%2C%22maxPostsPerDay%22%3A10%2C%22startInvitesCount%22%3A5%2C%22postsPerPage%22%3A10%2C%22siteImage%22%3A%22https%3A%2F%2Fres.cloudinary.com%2Flesswrong-2-0%2Fimage%2Fupload%2Fv1503704344%2Fsequencesgrid%2Fh6vrwdypijqgsop7xwa0.jpg%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en%22%2C%22googleAnalytics%22%3A%7B%22apiKey%22%3A%22UA-60844744-4%22%7D%2C%22googleMaps%22%3A%7B%22apiKey%22%3A%22AIzaSyA3C48rl26gynG3qIuNuS-3Bh_Zz9jFXkY%22%7D%2C%22twitterAccount%22%3A%22foo%22%2C%22facebookPage%22%3A%22http%3A%2F%2Ffacebook.com%2Ffoo%22%2C%22runVoteMigration%22%3Afalse%2C%22embedProvider%22%3A%22builtin%22%2C%22algolia%22%3A%7B%22appId%22%3A%22Z0GR6EXQHD%22%2C%22searchKey%22%3A%220b1d20b957917dbb5e1c2f3ad1d04ee2%22%7D%2C%22sentry%22%3A%7B%22url%22%3A%22https%3A%2F%2F1ab1949fc8d04608b43132f37bb2a1b0%40sentry.io%2F1301611%22%2C%22environment%22%3A%22production%22%2C%22release%22%3A%2253a87cb7a72398224c23650db0d9226bcb7f1fae%22%7D%7D%2C%22ROOT_URL%22%3A%22https%3A%2F%2Fwww.lesswrong.com%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22autoupdate%22%3A%7B%22versions%22%3A%7B%22web.browser%22%3A%7B%22version%22%3A%2285d8dc2cd6d88d37749a353371704529c8ef01cb%22%2C%22versionRefreshable%22%3A%2229b14f44905725bdcf79e52d86c4baab34429db3%22%2C%22versionNonRefreshable%22%3A%22644bf71a81c3ed596017ae5c465463465df2e4fd%22%7D%2C%22web.browser.legacy%22%3A%7B%22version%22%3A%227f4424962966e7c9ca5906ca30f2185ab6a50b12%22%2C%22versionRefreshable%22%3A%2229b14f44905725bdcf79e52d86c4baab34429db3%22%2C%22versionNonRefreshable%22%3A%224ef5c83372c89e78368300e0e4f961094c2af933%22%7D%7D%2C%22autoupdateVersion%22%3Anull%2C%22autoupdateVersionRefreshable%22%3Anull%2C%22autoupdateVersionCordova%22%3Anull%2C%22appId%22%3A%221txv9r51kxht481ysl8bb%22%7D%2C%22appId%22%3A%221txv9r51kxht481ysl8bb%22%2C%22isModern%22%3Afalse%7D"
+                )
+            );
+        </script>
+
+        <script type="text/javascript" src="/9e89967f2adf2a6214c6a686c755238b1822e889.js?meteor_js_resource=true"></script>
+    </body>
+</html>

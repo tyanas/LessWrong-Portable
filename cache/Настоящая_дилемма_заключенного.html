@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="next" href="/node/448" />
+<link rel="shortcut icon" href="https://lesswrong.ru/favicon.ico" type="image/vnd.microsoft.icon" />
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ['tex2jax.js'],
+  jax: ['input/TeX','output/HTML-CSS'],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true,
+    processClass: 'tex2jax',
+    ignoreClass: 'html'
+  },
+  showProcessingMessages: false,
+  messageStyle: 'none'
+});
+</script><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="up" href="/node/447" />
+<link rel="prev" href="/w/%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%B0%D0%BC%D0%BD%D0%B5%D0%B9_%D0%B2_%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%BA%D1%83%D1%87%D0%B8" />
+<meta name="description" content="Однажды я понял, что обычно [дилемму заключенного](https://ru.wikipedia.org/wiki/Дилемма_заключённого) представляют неправильно. В основе дилеммы заключенного лежит вот такая симметричная платежная матрица: 1:С1:П2:С(3,3)(5,0)2:П(0,5)(2,2)" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://lesswrong.ru/w/%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B0%D1%8F_%D0%B4%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE" />
+<link rel="shortlink" href="https://lesswrong.ru/node/366" />
+<meta property="og:site_name" content="LessWrong на русском" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lesswrong.ru/w/%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B0%D1%8F_%D0%B4%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE" />
+<meta property="og:title" content="Настоящая дилемма заключенного" />
+<meta property="og:description" content="Однажды я понял, что обычно [дилемму заключенного](https://ru.wikipedia.org/wiki/Дилемма_заключённого) представляют неправильно. В основе дилеммы заключенного лежит вот такая симметричная платежная матрица: 1:С1:П2:С(3,3)(5,0)2:П(0,5)(2,2)" />
+<meta property="og:updated_time" content="2018-12-20T14:04:25+03:00" />
+<meta property="article:published_time" content="2017-11-08T14:25:11+03:00" />
+<meta property="article:modified_time" content="2018-12-20T14:04:25+03:00" />
+  <title>Настоящая дилемма заключенного | LessWrong на русском</title>
+  <link type="text/css" rel="stylesheet" href="https://lesswrong.ru/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://lesswrong.ru/sites/default/files/css/css_bfUfDl0egYlmUrdcgMvZiGs0HK65JkOaJc_ylk5sGbI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://lesswrong.ru/sites/default/files/css/css_kH3cB6WtI_n3EvPxGrA7C_rUueUFFqY8-mbT-KywwGQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://lesswrong.ru/sites/default/files/css/css_K_JH8l_hoQVHNXSZiu1f3T6alu7oK6J66ZfVIBzynA8.css" media="all" />
+  <script type="text/javascript" src="https://lesswrong.ru/sites/default/files/js/js_vDrW3Ry_4gtSYaLsh77lWhWjIC6ml2QNkcfvfP5CVFs.js"></script>
+<script type="text/javascript" src="https://lesswrong.ru/sites/default/files/js/js_5ZvYbR_RpAnAa4Gy_hGCjwhuaBQEWzQIAwlMCStkIuU.js"></script>
+<script type="text/javascript" src="https://lesswrong.ru/sites/default/files/js/js_eY__ai7d_cDw4YNY-4mq0apU2YW3mBF10lrvP8p1otk.js"></script>
+<script type="text/javascript" src="https://lesswrong.ru/sites/default/files/js/js_xm2W_IwKEWLR2lFWSFgT9cIweUNqELdUUVpJ8g4rKS4.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.a2a_config=window.a2a_config||{};window.da2a={done:false,html_done:false,script_ready:false,script_load:function(){var a=document.createElement('script'),s=document.getElementsByTagName('script')[0];a.type='text/javascript';a.async=true;a.src='https://static.addtoany.com/menu/page.js';s.parentNode.insertBefore(a,s);da2a.script_load=function(){};},script_onready:function(){da2a.script_ready=true;if(da2a.html_done)da2a.init();},init:function(){for(var i=0,el,target,targets=da2a.targets,length=targets.length;i<length;i++){el=document.getElementById('da2a_'+(i+1));target=targets[i];a2a_config.linkname=target.title;a2a_config.linkurl=target.url;if(el){a2a.init('page',{target:el});el.id='';}da2a.done=true;}da2a.targets=[];}};(function ($){Drupal.behaviors.addToAny = {attach: function (context, settings) {if (context !== document && window.da2a) {if(da2a.script_ready)a2a.init_all('page');da2a.script_load();}}}})(jQuery);a2a_config.callbacks=a2a_config.callbacks||[];a2a_config.callbacks.push({ready:da2a.script_onready});a2a_config.overlays=a2a_config.overlays||[];a2a_config.templates=a2a_config.templates||{};
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"lw_theme","theme_token":"bfj74S_NziIkDTCykrt0Jv7U-5Zv5qcp4yCAqPqDOvc","js":{"0":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/autoupload\/js\/autoupload.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/mathjax\/mathjax.js":1,"public:\/\/languages\/ru_lf-nvG3IdBJLFgMuG5i9H-p9cxB4CUK_6U8CEzLbP8w.js":1,"misc\/progress.js":1,"sites\/all\/modules\/fivestar\/js\/fivestar.ajax.js":1,"sites\/all\/modules\/fivestar\/js\/fivestar.js":1,"1":1,"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.1\/MathJax.js?config=TeX-AMS-MML_HTMLorMML":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/footnotes\/footnotes.css":1,"sites\/all\/modules\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/typogrify\/typogrify.css":1,"sites\/all\/modules\/fivestar\/css\/fivestar.css":1,"sites\/all\/modules\/fivestar\/widgets\/oxygen\/oxygen.css":1,"sites\/all\/modules\/addtoany\/addtoany.css":1,"sites\/all\/themes\/lw_theme\/style.css":1}},"extlink":{"extTarget":0,"extClass":"ext","extLabel":"(link is external)","extImgClass":0,"extIconPlacement":"append","extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":".no-external-icon","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":"mailto","mailtoLabel":"(link sends e-mail)"},"urlIsAjaxTrusted":{"\/w\/%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B0%D1%8F_%D0%B4%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE":true,"\/system\/ajax":true},"ajax":{"edit-vote--2":{"callback":"fivestar_ajax_submit","event":"change","url":"\/system\/ajax","submit":{"_triggering_element_name":"vote"}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-366 node-type-translation" >
+
+  <div id="page">
+
+    <header id="header">
+
+      <div id="logo">
+        <a href="/" title="Главная" rel="home">
+          Главная
+        </a>
+      </div>
+
+        <div class="region region-header">
+    <div id="block-block-4" class="block block-block">
+
+
+  <div class="content">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32774277-1', 'auto');
+  ga('send', 'pageview');
+
+</script>  </div>
+</div>
+<div id="block-block-19" class="block block-block">
+
+
+  <div class="content">
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45932511 = new Ya.Metrika({
+                    id:45932511,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+
+<!-- /Yandex.Metrika counter -->  </div>
+</div>
+  </div>
+
+
+        <nav id="primary-menu-nav">
+          <ul id="main-menu" class="links inline clearfix"><li class="menu-1997 first"><a href="/w" title="">Переводы</a></li>
+<li class="menu-1998"><a href="https://lesswrong.ru/wiki" title="Вики LessWrong.ru">Вики</a></li>
+<li class="menu-2291"><a href="https://lesswrong.ru/wiki/%D0%92%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8_%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0" title="">Встречи</a></li>
+<li class="menu-2292"><a href="/slack" title="Slack-чат сообщества">Чат</a></li>
+<li class="menu-2293"><a href="https://lesswrong.ru/forum/index.php" title="Форум, на котором обсуждаются материалы сайта и рациональное мышление в целом">Форум</a></li>
+<li class="menu-2570 last"><a href="/about" title="">О сайте</a></li>
+</ul>        </nav>
+
+        <nav id="secondary-menu-nav">
+          <ul>
+                      <li><a href="/user?destination=/w/%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B0%D1%8F_%D0%B4%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 438.542 438.542" style="enable-background:new 0 0 438.542 438.542;" xml:space="preserve">
+  <g>
+		<path d="M414.41,60.676c-16.084-16.083-35.446-24.125-58.102-24.125h-91.357c-2.478,0-4.429,0.614-5.853,1.855    c-1.431,1.237-2.382,3.093-2.854,5.568c-0.479,2.474-0.76,4.709-0.853,6.707c-0.096,1.997-0.051,4.521,0.144,7.565    c0.186,3.046,0.281,4.949,0.281,5.713c0.571,1.524,0.767,2.81,0.571,3.855c-0.191,1.043,0.476,1.903,1.998,2.568    c1.52,0.666,2.279,1.191,2.279,1.569c0,0.378,1.096,0.662,3.285,0.855c2.19,0.192,3.289,0.284,3.289,0.284h3.713h3.142h82.228    c12.56,0,23.312,4.471,32.258,13.422c8.952,8.945,13.422,19.696,13.422,32.261V319.77c0,12.563-4.47,23.312-13.422,32.258    c-8.945,8.948-19.698,13.421-32.258,13.421h-91.357c-2.478,0-4.436,0.62-5.853,1.855c-1.43,1.242-2.382,3.094-2.857,5.564    c-0.476,2.478-0.763,4.716-0.855,6.714c-0.092,1.995-0.051,4.518,0.144,7.563c0.195,3.046,0.288,4.948,0.288,5.708    c0,2.478,0.896,4.613,2.707,6.427c1.81,1.807,3.949,2.71,6.427,2.71h91.357c22.648,0,42.018-8.042,58.095-24.133    c16.084-16.077,24.126-35.446,24.126-58.095V118.769C438.533,96.118,430.491,76.754,414.41,60.676z" fill="#FFFFFF"/>
+		<path d="M338.047,219.27c0-4.948-1.813-9.233-5.427-12.85L177.302,51.101c-3.616-3.612-7.895-5.424-12.847-5.424    c-4.952,0-9.233,1.812-12.85,5.424c-3.615,3.617-5.424,7.904-5.424,12.85v82.226H18.274c-4.952,0-9.235,1.812-12.851,5.424    C1.807,155.219,0,159.503,0,164.452v109.635c0,4.949,1.807,9.233,5.424,12.848c3.619,3.61,7.902,5.427,12.851,5.427h127.906    v82.225c0,4.945,1.809,9.233,5.424,12.847c3.621,3.617,7.902,5.428,12.85,5.428c4.949,0,9.231-1.811,12.847-5.428l155.318-155.312    C336.234,228.501,338.047,224.216,338.047,219.27z" fill="#FFFFFF"/>
+  </g>
+</svg>
+            </a></li>
+                    </ul>
+        </nav>
+
+    </header> <!-- /#header -->
+
+
+    <div id="breadcrumb">
+    </div>
+
+
+    <div id="main-wrapper">
+
+              <aside id="sidebar">
+            <div class="region region-sidebar">
+    <div id="block-search-form" class="block block-search">
+
+
+  <div class="content">
+    <form action="/w/%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B0%D1%8F_%D0%B4%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Форма поиска</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Поиск </label>
+ <input title="Введите ключевые слова для поиска." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Поиск" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-s3_5fFARH4_bTqvCKA7IA94Cd7R17b6rfpJHnJYFQQ0" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div>
+<div id="block-book-navigation" class="block block-book">
+
+    <h2><a href="/node/285" class="book-title">Рациональность: от ИИ до зомби</a></h2>
+
+  <div class="content">
+    <ul class="menu"><li class="first collapsed menu-depth-2"><a href="/%D0%9A%D0%B0%D1%80%D1%82%D0%B0_%D0%B8_%D1%82%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Карта и территория</a></li><li class="collapsed menu-depth-2"><a href="/%D0%9A%D0%B0%D0%BA_%D1%83%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D0%BE_%D0%BC%D0%B5%D0%BD%D1%8F%D1%82%D1%8C_%D1%81%D0%B2%D0%BE%D0%B5_%D0%BC%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Как успешно менять своё мнение</a></li><li class="collapsed menu-depth-2"><a href="/node/372">Машина в призраке</a></li><li class="collapsed menu-depth-2"><a href="/node/373">Просто реальность</a></li><li class="expanded active-trail menu-depth-2"><a href="/node/446" class="active-trail">Просто доброта</a><ul class="menu"><li class="first expanded active-trail menu-depth-3"><a href="/node/447" class="active-trail">Теория ценности</a><ul class="menu"><li class="first leaf menu-depth-4"><a href="/w/%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%B0%D0%BC%D0%BD%D0%B5%D0%B9_%D0%B2_%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%BA%D1%83%D1%87%D0%B8">Раскладывание камней в правильные кучи</a></li><li class="last leaf active-trail menu-depth-4"><a href="/w/%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B0%D1%8F_%D0%B4%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE" class="active-trail active">Настоящая дилемма заключенного</a></li></ul></li><li class="last collapsed menu-depth-3"><a href="/node/448">Количественный гуманизм</a></li></ul></li><li class="last collapsed menu-depth-2"><a href="/node/374">Стать сильнее</a></li></ul>  </div>
+</div>
+<div id="block-block-6" class="block block-block">
+
+
+  <div class="content">
+    <div class="vkwidget">
+<div id="vk_groups"></div>
+<script type="text/javascript">
+  function onVkWidgetLoad() {
+    VK.Widgets.Group("vk_groups", {mode: 0, width: "250", height: "272", color1: 'FFFFFF', color2: '000000', color3: 'B6B6B6'}, 65688570);
+  }
+  function onVkWidgetError() {
+    document.getElementsByClassName("vkwidget")[0].style.height = "auto";
+  }
+</script>
+<script async="true" type="text/javascript" src="https://vk.com/js/api/openapi.js?105" onload="onVkWidgetLoad()" onerror="onVkWidgetError()"></script></div>  </div>
+</div>
+<div id="block-menu-menu-resources" class="block block-menu">
+
+
+  <div class="content">
+    <ul class="menu"><li class="first leaf menu-depth-1"><a href="/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D1%8B" title="Список литературы по рациональному мышлению и ссылок на дополнительные материалы в интернете.">Список литературы</a></li><li class="leaf menu-depth-1"><a href="/%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B_%D0%B8_%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%8B" title="Собрание ссылок на дополнительные материалы в интернете.">Материалы и ресурсы</a></li><li class="leaf menu-depth-1"><a href="http://umneem.org/" title="Материалы по практической рациональности">Умнеем вместе</a></li><li class="leaf menu-depth-1"><a href="/%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8" title="Электронные версия цепочек для скачивания">Электронные книги</a></li><li class="leaf menu-depth-1"><a href="/all-audios">Аудиозаписи</a></li><li class="last leaf menu-depth-1"><a href="https://lesswrong.ru/calibrator" title="Приложение для прокачки способности оценивать вероятности">Калибратор</a></li></ul>  </div>
+</div>
+<div id="block-menu-menu-help-to-community" class="block block-menu">
+
+
+  <div class="content">
+    <ul class="menu"><li class="first last expanded menu-depth-1"><a href="https://lesswrong.ru/wiki/Как_помочь_сообществу" title="">Как помочь сообществу</a><ul class="menu"><li class="first leaf menu-depth-2"><a href="https://lesswrong.ru/wiki/Исправление_опечаток_на_сайте" title="">Как поправить опечатку</a></li><li class="last leaf menu-depth-2"><a href="https://lesswrong.ru/wiki/Как_принять_участие_в_переводах" title="">Как принять участие в переводах</a></li></ul></li></ul>  </div>
+</div>
+  </div>
+        </aside> <!-- /#sidebar -->
+
+      <main>
+        <header>
+          <h2 class="element-invisible">Вы здесь</h2><div class="breadcrumb"><a href="/">Главная</a> » <a href="/node/285">Рациональность: от ИИ до зомби</a> » <a href="/node/446">Просто доброта</a> » <a href="/node/447">Теория ценности</a></div>          <div class="tabs"><h2 class="element-invisible">Главные вкладки</h2><ul class="tabs primary"><li class="active"><a href="/w/%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B0%D1%8F_%D0%B4%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE" class="active">Читать<span class="element-invisible">(активная вкладка)</span></a></li>
+<li><a href="/node/366/edit">Править</a></li>
+<li><a href="/node/366/revisions">Редакции</a></li>
+</ul></div>          <a id="main-content"></a>
+                    <h1 class="title" id="page-title">Настоящая дилемма заключенного</h1>                                      </header>
+          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+
+  <div class="content">
+    <div id="node-366" class="node node-translation clearfix" about="/w/%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B0%D1%8F_%D0%B4%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE" typeof="sioc:Item foaf:Document">
+
+
+      <span property="dc:title" content="Настоящая дилемма заключенного" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+
+  <div class="content">
+    <div class="field field-name-field-author field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Элиезер Юдковский</div></div></div>
+    <hr />
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="tex2jax"><p>Однажды я понял, что обычно <a href="https://ru.wikipedia.org/wiki/Дилемма_заключённого">дилемму заключенного</a> представляют&nbsp;неправильно.</p>
+<p>В основе дилеммы заключенного лежит вот такая симметричная платежная&nbsp;матрица:</p>
+<table align="center" rules="all" cellpadding="5">
+<tbody>
+<tr>
+<td></td>
+<td>1:С</td>
+<td>1:П</td>
+</tr>
+<tr>
+<td>2:С</td>
+<td>(3,3)</td>
+<td>(5,0)</td>
+</tr>
+<tr>
+<td>2:П</td>
+<td>(0,5)</td>
+<td>(2,2)</td>
+</tr>
+</tbody>
+</table>
+<p>Есть два игрока: Игрок 1 и Игрок 2. Каждый из них может выбрать С или П. Итоговый результат для Игрока 1 и Игрока 2 &#8212; соответственно, первое и второе число пары чисел в скобках. По причинам, которые станут понятны ниже, C означает «сотрудничать», П &#8212;&nbsp;«предать».</p>
+<p>Заметим, что для участника этой игры (пусть он считает себя первым) предпочитаемые исходы выстраиваются в следующем порядке: (П, С) &gt;&gt; (C, С) &gt;&gt; (П, П) &gt;&gt; (С,&nbsp;П).</p>
+<p>Видим, что П предпочтительнее, чем С: если второй игрок выбирает С, то первому выгоднее (П, С), чем (С, С). Если второй выбирает П, то первому выгоднее (П, П), чем (С, П). Таким образом, ты мудро выбираешь П, а так как платежная матрица симметрична, второй игрок аналогично выберет&nbsp;П.</p>
+<p>Если бы вы оба были не так мудры! Каждому из вас выгоднее (С, С), чем (П, П). Поэтому вы оба предпочитаете обоюдное сотрудничество обоюдному&nbsp;предательству.</p>
+<p>В теории принятия решений дилемма заключенного &#8212; одна из основ, и о ней написано огромное количество томов. Но я осмелюсь утверждать, что в традиционном представлении дилеммы заключенного есть серьезное упущение &#8212; по крайней мере, для&nbsp;людей.</p>
+<p>Классическое представление дилеммы заключенного таково: ты преступник, пойманный властями вместе с сообщником. Независимо друг от друга, без возможности общаться между собой и без возможности изменить решение впоследствии, каждый из вас должен решить, давать показания против сообщника (П) или молчать&nbsp;(С).</p>
+<p>В настоящий момент каждому из вас грозит год тюрьмы. Дача показаний против сообщника уменьшает твой срок на год и прибавляет другому два&nbsp;года.</p>
+<p>В другом варианте,  ты и незнакомец, не зная ничего друг о друге и не имея возможности узнать в будущем, единожды должны сыграть С или П, получив выигрыш в соответствии с приведенной выше платежной&nbsp;матрицей.</p>
+<p>И, конечно, в классическом варианте предполагается, что ты полностью эгоистичен, т.е. не заботишься о сообщнике или об игроке в другой&nbsp;комнате.</p>
+<p>И именно последнее условие, с моей точки зрения, приводит к неправильному восприятию дилеммы&nbsp;заключённого.</p>
+<p>Невозможно устранить эффект <a href="/w/%D0%97%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B7%D0%B0%D0%B4%D0%BD%D0%B8%D0%BC_%D1%87%D0%B8%D1%81%D0%BB%D0%BE%D0%BC" title="Click to view a local node." class="freelink freelink-nodetitle freelink-internal">знания задним числом</a>, инструктируя присяжных вести себя так, будто они не знают, к чему привели рассматриваемые события. Аналогично, без больших усилий, подкрепленных соответствующими знаниями, психически здоровый человек не может притворяться по-настоящему&nbsp;эгоистичным.</p>
+<p>У нас есть врожденные чувства честности, чести, сопереживания, симпатии и даже альтруизма. Это результат того, что наши предки длительное время <a href="https://www.readthesequences.com/AdaptationExecutersNotFitnessMaximizers">приспосабливались</a> к игре в повторяющуюся дилемму заключенного. Мы не можем полностью и честно предпочесть исход (П, С) исходу (С, С), хотя можем полностью предпочесть исход (С, С) исходу (П, П) и исход (П, П) исходу (С, П). Мысль о сообщнике, проводящем три года в тюрьме, не может совсем не трогать&nbsp;нас.</p>
+<p>В закрытой комнате, где под наблюдением специалистов по экономической психологии мы играем в простую игру, мы не можем совсем не симпатизировать незнакомцу, который может сотрудничать. Мы не можем быть полностью счастливы при мысли о том, что незнакомец выбрал сотрудничать, а мы &#8212; предавать, и благодаря этому мы получим пять долларов, а он не получит&nbsp;ничего.</p>
+<p>Мы инстинктивно держимся за исход (С, С) и ищем способы увериться, что этот выбор разделяет и вторая сторона. Наша невольная мысль &#8212; «как бы убедиться, что сотрудничество взаимно», а не «как бы обмануть второго, чтобы он сыграл С, в то время как я сыграю П и получу максимальный&nbsp;выигрыш».</p>
+<p>Для тех, кому важны альтруизм, честь и справедливость, дилемма заключенного не содержит по-настоящему критической платежной матрицы, безотносительно финансовых исходов для игроков. (С, С) предпочтительнее, чем (П, С), и ключевой вопрос &#8212; думает ли второй игрок так&nbsp;же.</p>
+<p>И людям, которые только что познакомились с теорией игр, нельзя объяснить, что они должны притворяться полностью эгоистичными. Это ничуть не легче, чем объяснить людям, познакомившимся с идеей <a href="https://www.readthesequences.com/AnthropomorphicOptimism">антропоморфизма</a>, что они должны притворяться максимизаторами&nbsp;скрепок.</p>
+<p>Для настоящей дилеммы заключённого ситуация должна быть примерно&nbsp;такой:</p>
+<p>Игрок 1: Человек, дружественный искусственный интеллект или другой человекоподобный разум.<br />
+Игрок 2: Недружественнный искусственный интеллект, либо инопланетянин, который озабочен лишь <a href="/w/%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%B0%D0%BC%D0%BD%D0%B5%D0%B9_%D0%B2_%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%BA%D1%83%D1%87%D0%B8" title="Click to view a local node." class="freelink freelink-nodetitle freelink-internal">раскладыванием камней в правильные кучи</a>.</p>
+<p>Представим, что четыре миллиарда людей &#8212; не всё человечество, но значительная его часть &#8212; страдает прогрессирующим смертельным заболеванием, которое может вылечить только&nbsp;Вещество.</p>
+<p>Однако Вещество возможно производить, только взаимодействуя с максимизатором скрепок из параллельного мира &#8212; с помощью Вещества еще можно делать скрепки. Максимизатора скрепок волнует количество скрепок только в его мире, а не в нашем, так что мы не можем влиять на него, предлагая изготавливать или уничтожать скрепки здесь. Мы никогда раньше не имели дело с максимизатором скрепок и никогда больше не встретим его&nbsp;впредь.</p>
+<p>У человечества и максимизатора скрепок есть только один шанс добыть себе немного Вещества, потому что щель между мирами скоро захлопнется. Однако, процесс добычи вещества приводит к потере его&nbsp;части.</p>
+<p>Платежная матрица выглядит&nbsp;так:</p>
+<table align="center" rules="all" cellpadding="5">
+<tbody>
+<tr>
+<td></td>
+<td>1:С</td>
+<td>1:П</td>
+</tr>
+<tr>
+<td>2:С</td>
+<td>(спасти 2 миллиарда человеческих жизней, сделать 2 скрепки)</td>
+<td>(3 миллиарда жизней, 0 скрепок)</td>
+</tr>
+<tr>
+<td>2:П</td>
+<td>(0 жизней, 3 скрепки)</td>
+<td>(1 миллиард жизней, 1 скрепка)</td>
+</tr>
+</tbody>
+</table>
+<p>Я составил матрицу так, чтобы вызвать чувство негодования при мысли о том, что максимизатор скрепок хочет обменять миллиарды человеческих жизней на пару скрепок. Очевидно же, что максимизатор скрепок обязан отдать все Вещество нам. Но он делает не то, что обязан, а просто максимизирует количество своих&nbsp;скрепок.</p>
+<p>В этом случае мы на самом деле предпочитаем исход (П, С) исходу (С, С), оставляя за скобками средства, которыми достигается цель. Мы намного охотнее предпочтем жить во вселенной, где три миллиарда людей спаслись и не было произведено ни одной скрепки, чем пожертвуем миллиардом жизней в обмен на изготовление двух скрепок. Кажется, что в этом случае сотрудничать просто неправильно. Предавать даже не кажется нечестным – ведь так велика жертва для нас и так мал выигрыш максимизатора скрепок! Уточним особо, что максимизатор скрепок не чувствует боль или удовольствие &#8212; он просто действует так, чтобы в его мире стало больше скрепок. Он не испытает радость, приобретя скрепки, не испытает боль, потеряв скрепки, и не оскорбится, если мы предадим&nbsp;его.</p>
+<p>Что же ты сделаешь? Будешь ли сотрудничать, если искренне, целиком и полностью желаешь того огромного выигрыша, который можешь получить, и нисколько не озабочен ничтожной в сравнении с этим потерей второго игрока? Если предать кажется правильным, даже если второй игрок&nbsp;сотрудничает?</p>
+<p>Именно так выглядит платёжная матрица для настоящей дилеммы заключённого. Настоящая дилемма заключённого &#8212; это ситуация, когда исход (П, С) кажется правильнее, чем (С,&nbsp;С).</p>
+<p>Но вся остальная логика &#8212; что будет, если оба игрока так думают, и поэтому оба предадут &#8212; ничуть не меняется. Ведь максимизатор скрепок настолько же мало обеспокоен людскими смертями, болью или нашим ощущением предательства, как нас мало волнуют скрепки. Но обоим нам выгоднее (С, С), чем (П,&nbsp;П).</p>
+<p>Если ты когда-нибудь гордился тем, что в дилемме заключенного выбрал сотрудничать, или однажды оспаривал вывод классической теории игр о том, что «<a href="/w/%D0%9F%D0%B0%D1%80%D0%B0%D0%B4%D0%BE%D0%BA%D1%81_%D0%9D%D1%8C%D1%8E%D0%BA%D0%BE%D0%BC%D0%B0_%D1%81%D0%BE%D0%B6%D0%B0%D0%BB%D0%B5%D1%8F_%D0%BE_%D1%81%D0%B2%D0%BE%D0%B5%D0%B9_%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Click to view a local node." class="freelink freelink-nodetitle freelink-internal">рациональнее</a>» предать &#8212; что ты скажешь об этой настоящей дилемме&nbsp;заключенного?</p>
+<p>PS На самом деле, я не считаю, что рациональные агенты всегда должны предавать в однократной дилемме заключённого, в которой другой игрок выберет сотрудничать, если ожидает того же от вас. Я думаю, что есть ситуации, где два агента могут рационально прийти к (С, С), а не к (П, П) и получить соответствующую&nbsp;выгоду.</p>
+<p>Часть своих доводов я изложил при обсуждении <a href="/w/%D0%9F%D0%B0%D1%80%D0%B0%D0%B4%D0%BE%D0%BA%D1%81_%D0%9D%D1%8C%D1%8E%D0%BA%D0%BE%D0%BC%D0%B0_%D1%81%D0%BE%D0%B6%D0%B0%D0%BB%D0%B5%D1%8F_%D0%BE_%D1%81%D0%B2%D0%BE%D0%B5%D0%B9_%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Click to view a local node." class="freelink freelink-nodetitle freelink-internal">задачи Ньюкома</a>. Однако, мы не можем рассуждать о том, <a href="https://intelligence.org/files/TDT.pdf">возможно ли в этой дилемме рациональное сотрудничество</a>, пока не избавимся от интуитивного ощущения, что исход (С,С) хорош сам по себе. Если мы хотим понять математику, мы должны научиться видеть сквозь социальный <a href="/w/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%B0%D0%B1%D0%B0%D0%BD%D0%B4%D0%B0_%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA" title="Click to view a local node." class="freelink freelink-nodetitle freelink-internal">ярлык</a> «взаимного сотрудничества». Если вы чувствуете, что с точки зрения Игрока 1 (С,С) гораздо лучше, чем (П,П), но не чувствуете, что при этом (П,С) гораздо лучше, чем (С,С), то вы пока не понимаете всю сложность этой&nbsp;задачи.</p>
+</div></div></div></div>    <hr />
+
+    <div class="field field-name-field-translators field-type-text field-label-inline clearfix"><div class="field-label">Перевод:&nbsp;</div><div class="field-items"><div class="field-item even">Фёдор Ефремов, Alaric</div></div></div><div class="field field-name-field-original-link field-type-link-field field-label-inline clearfix"><div class="field-label">Ссылка на оригинал:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="http://lesswrong.com/lw/tn/the_true_prisoners_dilemma/" rel="nofollow" class="originallink" title="Ссылка на оригинальный текст">The True Prisoner&#039;s Dilemma</a></div></div></div><div class="field field-name-field-readthesequences-link field-type-link-field field-label-inline clearfix"><div class="field-label">Ссылка на оригинал на readthesequences.com:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="https://www.readthesequences.com/The-True-Prisoners-Dilemma">The True Prisoner’s Dilemma</a></div></div></div><div class="field field-name-field-rfatz-id field-type-number-integer field-label-inline clearfix"><div class="field-label">Номер в книге &quot;Рациональность: от ИИ до зомби&quot;:&nbsp;</div><div class="field-items"><div class="field-item even">275</div></div></div><div class="field field-name-field-rating field-type-fivestar field-label-inline clearfix"><div class="field-label">Оцените перевод:&nbsp;</div><div class="field-items"><div class="field-item even"><form class="fivestar-widget" action="/w/%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B0%D1%8F_%D0%B4%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE" method="post" id="fivestar-custom-widget" accept-charset="UTF-8"><div><div  class="clearfix fivestar-average-text fivestar-average-stars fivestar-form-item fivestar-oxygen"><div class="form-item form-type-fivestar form-item-vote">
+ <div class="form-item form-type-select form-item-vote">
+ <select id="edit-vote--2" name="vote" class="form-select"><option value="-">Select rating</option><option value="20">Give Настоящая дилемма заключенного 1/5</option><option value="40">Give Настоящая дилемма заключенного 2/5</option><option value="60">Give Настоящая дилемма заключенного 3/5</option><option value="80">Give Настоящая дилемма заключенного 4/5</option><option value="100">Give Настоящая дилемма заключенного 5/5</option></select>
+<div class="description"><div class="fivestar-summary fivestar-summary-average-count"><span class="empty">Голосов пока нет</span></div></div>
+</div>
+
+</div>
+</div><input class="fivestar-submit form-submit" type="submit" id="edit-fivestar-submit" name="op" value="Rate" /><input type="hidden" name="form_build_id" value="form-RQCjhjZig8gFKuTFEgqP9mIla5NFtAlFBfYeHQswdR4" />
+<input type="hidden" name="form_id" value="fivestar_custom_widget" />
+</div></form></div></div></div><span class="a2a_kit a2a_kit_size_24 a2a_target addtoany_list" id="da2a_1">
+      <a class="a2a_button_vk"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+
+
+
+    </span>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if(window.da2a)da2a.script_load();
+//--><!]]>
+</script>  <div id="book-navigation-285" class="book-navigation">
+
+        <div class="page-links clearfix">
+              <a href="/w/%D0%A0%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%B0%D0%BC%D0%BD%D0%B5%D0%B9_%D0%B2_%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%BA%D1%83%D1%87%D0%B8" class="page-previous" title="На предыдущую страницу">‹ Раскладывание камней в правильные кучи</a>
+                    <a href="/node/447" class="page-up" title="Перейти к родительской странице">Вверх</a>
+                    <a href="/node/448" class="page-next" title="На следующую страницу">Количественный гуманизм ›</a>
+          </div>
+
+  </div>
+  </div>
+
+  <nav class="node-links-nav">
+    <ul class="links inline"><li class="book_printer first"><a href="/book/export/html/366" title="Показать версию этой подшивки со всеми дочерними страницами в виде, удобном для печати.">Версия для печати</a></li>
+<li class="0 last"><a href="/comment/reply/366#comment-form" title="Поделитесь своими мыслями и мнением относительно этой темы.">Добавить комментарий</a></li>
+</ul>  </nav>
+
+
+</div>
+  </div>
+</div>
+<div id="block-block-8" class="block block-block">
+
+
+  <div class="content">
+    <ul><li>Короткая ссылка сюда: lesswrong.ru/366</li></ul>  </div>
+</div>
+<div id="block-block-20" class="block block-block">
+
+
+  <div class="content">
+    <div class="no-external-icon kocherga-banner">
+<a href="https://kocherga-club.ru/workshop?utm_campaign=workshop-2019-02&amp;utm_medium=banner&amp;utm_source=lesswrong&amp;utm_content=bottom-banner"></p>
+<div class="kocherga-banner--box">
+<div>
+
+  </div>
+
+</div>
+<p></a>
+</div>
+  </div>
+</div>
+  </div>
+              </main>
+
+    </div> <!-- /#main-wrapper -->
+
+    <footer id="footer">
+          </footer> <!-- /#footer -->
+
+  </div> <!-- /#page -->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+da2a.targets=[
+{title:"\u041d\u0430\u0441\u0442\u043e\u044f\u0449\u0430\u044f \u0434\u0438\u043b\u0435\u043c\u043c\u0430 \u0437\u0430\u043a\u043b\u044e\u0447\u0435\u043d\u043d\u043e\u0433\u043e",url:"https:\/\/lesswrong.ru\/w\/%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D1%8F%D1%89%D0%B0%D1%8F_%D0%B4%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0_%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE"}];
+da2a.html_done=true;if(da2a.script_ready&&!da2a.done)da2a.init();da2a.script_load();
+//--><!]]>
+</script>
+</body>
+</html>
