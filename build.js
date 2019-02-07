@@ -12,6 +12,7 @@ const config = JSON.parse(jetpack.read('meta/' + version + '.json'));
 
 var scrapeError = false;
 
+
 // LessWrong-Portable/example-EPUB-files/OEBPF/content $ cat *.xhtml|grep https://lesswrong.ru/w/ > ../../../missed.html
 // cd -
 
@@ -117,34 +118,40 @@ function addChapterToBook(html, urlConfig, cache_path) {
     .toString()
     .replace(/>&</g, '>&amp;<')
     .replace(/nisbett&wilson.pdf/g, 'nisbett&amp;wilson.pdf')
-    .replace(/ < /g, ' &lt; ')
+    .replace(/' > /g, "'>")
     .replace(/ > /g, ' &gt; ')
+    .replace(/ < /g, ' &lt; ')
     .replace(/http:\/\/lesswrong.ru/g, 'https://lesswrong.ru') // http --> https
     .replace(/<a href="\/w\//g, '<a href="https://lesswrong.ru/w/')
     .replace(/<a href="\/node\//g, '<a href="https://lesswrong.ru/node/')
+    .replace(/ & /g, ' &amp; ')
     ;
 
 
   // set relative links
 
   Object.keys(idxByUrl).forEach(url => {
-    const regex = new RegExp(url, "g");
-    section = section.replace(regex, `s${idxByUrl[url]}.xhtml`);
+    const regex = new RegExp(`['"]${url}['"]`, "g");
+    section = section.replace(regex, `"s${idxByUrl[url]}.xhtml"`);
 
     // replace urls written without cyrillic letters
     if (url.indexOf('https://lesswrong.ru/w/') !== -1) {
       const encUrl = encodeURI(url)
       if (url !== encUrl) {
-        const regex2 = new RegExp(encUrl, "g");
-        section = section.replace(regex2, `s${idxByUrl[url]}.xhtml`);
+        const regex2 = new RegExp(`['"]${encUrl}['"]`, "g");
+        section = section.replace(regex2, `"s${idxByUrl[url]}.xhtml"`);
       }
     } else if (url.indexOf('readthesequences') === -1) {
       const url2 = url.replace('-', '') // Class-Project --> ClassProject
-      const regex3 = new RegExp(url2, "g");
-      section = section.replace(regex3, `s${idxByUrl[url]}.xhtml`);
+      const regex3 = new RegExp(`['"]${url2}['"]`, "g");
+      section = section.replace(regex3, `"s${idxByUrl[url]}.xhtml"`);
     }
   })
 
+  const matched = section.match(/<img src=["']http([^']+)["']/g)
+  if (matched && matched.length) {
+    console.log(path, matched)
+  }
   epub.addSection(prettyTitle, section);
 }
 
@@ -191,7 +198,11 @@ if (scrapeError) {
 
   // DEBUG
   // Also write the structure both for debugging purposes and also to provide sample output in GitHub.
-  epub.writeFilesForEPUB('./example-EPUB-files', function() {
-    console.info('Done!');
+  epub.writeFilesForEPUB('./example-EPUB-files', function(err) {
+    if (err) {
+      console.error(err);
+    } else {
+      console.info('Done!');
+    }
   });
 }
